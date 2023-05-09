@@ -161,7 +161,7 @@ function Main(props) {
 
             {/* The following div is for the main image - which later may become a set of images or video clip */}
             <div className='mainFeatureImg'>
-                <img src='/build/assets/images/mainFeature/mf-win-back.jpg' className='featureImgFrame' alt='Hotel Sejour Mint Winter 01' />
+                <img src='/build/assets/images/mainFeature/mf-win-back.jpg' className='featureImgFrame' alt='Hotel Sejour Mint Winter 03' />
             </div>
 
             {/* Inserts the summary text */}
