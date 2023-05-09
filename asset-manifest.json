@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sejourmint-gp2/static/css/main.f77cf87f.css",
-    "main.js": "/sejourmint-gp2/static/js/main.9298af4e.js",
+    "main.js": "/sejourmint-gp2/static/js/main.55ed4310.js",
     "static/js/787.9d00e0ec.chunk.js": "/sejourmint-gp2/static/js/787.9d00e0ec.chunk.js",
     "index.html": "/sejourmint-gp2/index.html",
     "main.f77cf87f.css.map": "/sejourmint-gp2/static/css/main.f77cf87f.css.map",
-    "main.9298af4e.js.map": "/sejourmint-gp2/static/js/main.9298af4e.js.map",
+    "main.55ed4310.js.map": "/sejourmint-gp2/static/js/main.55ed4310.js.map",
     "787.9d00e0ec.chunk.js.map": "/sejourmint-gp2/static/js/787.9d00e0ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f77cf87f.css",
-    "static/js/main.9298af4e.js"
+    "static/js/main.55ed4310.js"
   ]
 }
