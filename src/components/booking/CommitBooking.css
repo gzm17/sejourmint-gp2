@@ -1,0 +1,159 @@
+.viewPortDetails {
+    width: 100%;
+    height: auto;
+}
+.detailsTitle {
+    font-weight: bolder;
+}
+.detailsFrame {
+    width: 60%;
+    height: auto;
+    background-color: white;
+    border-radius: 6px;
+    padding: 25px;
+    margin: 0 auto 0 auto;
+}
+.detailsFlexBox {
+    display: flex;
+    width: 100%;
+}
+.bookingForSelf, .bookingForOther {
+    width: 50%;
+    height: 50px;
+    border: 2px solid rgb(190, 185, 185);
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.bookingForSelf {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 2px solid rgba(235, 172, 55, 0.809);
+    z-index: 1;
+}
+.bookingForOther {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: -2px;
+}
+.checkMarkSelf, .checkMarkOther {
+    width: 25px;
+    height: 25px;
+    margin: 5px 15px 5px 15px;
+    opacity: 0;
+    color: rgba(235, 172, 55, 0.809);
+}
+.checkMarkSelf {
+    opacity: 1.0;
+}
+
+.detailsFlexBox {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    line-height: 5px;
+    margin: 15px 0px 15px 0px;
+}
+.inputCellInDetailsLeft, .inputCellInDetailsRight, .inputCellInDetailsExpCVV {
+    width: 50%;
+    text-align: left;
+}
+.inputCellInDetailsLeft {
+    padding: 0px 10px 0px 0px;   
+}
+.inputCellInDetailsRight {
+    padding: 0px 0px 0px 10px;   
+}
+.inputCellInDetailsExpCVV {
+    display: flex;
+}
+.inputBoxDetails{
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+textarea{
+    /* display: flex; */
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    /* justify-content: left; */
+}
+.instruction {
+    text-align: left;
+    width: 100%;
+    line-height: 0px;
+}
+.detailsSpace {
+    height: 10px;
+    width: 100%;
+}
+#bookerContainer {
+    display: auto;
+}
+#guestContainer {
+    display: none;
+}
+.inputCellInDetailsRight1, .inputCellInDetailsRight2 {
+    width: 50%;
+    text-align: left;
+}
+.inputCellInDetailsRight1 {
+    padding: 0px 10px 0px 0px;
+}
+.inputCellInDetailsRight2 {
+    padding: 0px 0px 0px 0px;
+}
+
+/* Number summary block */
+.summaryLine {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    line-height: 10px;
+}
+.summaryTextLeft {
+    width: 70%;
+    text-align: left;
+    padding: 0px 25px 0px 25px;
+}
+.summaryTextRight {
+    width: 30%;
+    text-align: right;
+    padding: 0px 25px 0px 25px;
+}
+.roomPriceContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    line-height: 5px;
+}
+.typeRateName {
+    width: 75%;
+    text-align: left;
+}
+.ratePrice {
+    width: 25%;
+    text-align: right;
+}
+
+/* For rendering small screen */
+@media only screen and (max-width: 768px) {
+    .detailsFlexBox {
+        display: block;
+    }
+    .bookingForSelf, .bookingForOther {
+        width: 100%;
+        margin: 5px auto 0px 0px;
+    } 
+    .inputCellInDetailsLeft, .inputCellInDetailsRight {
+        width: 100%;
+        padding: 0px;
+    }
+    .inputCellInDetailsExpCVV {
+        width: 100%;
+    }
+}

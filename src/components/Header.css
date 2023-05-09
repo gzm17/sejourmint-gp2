@@ -1,0 +1,187 @@
+/* header and header-bg are for top bar which is fixed, and changes opacity as scrolls
+headerLeft, headerCenter and headerRight are three div containers the details of the nav bar
+headerLeft houses the menuBars (bar1-3) and the dropdown menu
+headerCenter contains the hotel title
+headerRight contains the <a> for booking 
+*/
+.header {
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    /* transition: .3s ease-in; */
+    /* overflow: auto!;  /* originally hidden, and it cuts off dropdown list. Now ok */
+}
+
+.header-bg {
+    background-color: rgb(239, 246, 235);
+}
+
+.header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.headerLeft {
+    /* width: 25%; */
+    height: 100%;
+    /* float: left; */
+    vertical-align: center;
+    color:  rgb(242, 180, 34);
+}
+
+.headerCenter {
+    /* width: 50%; */
+    height: 100%;
+    /* float: left; */
+    text-align: center;
+    color:  rgb(242, 180, 34);
+    z-index: 2;
+}
+
+h2 {
+    margin: auto;
+    color:rgb(242, 180, 34);
+}
+
+.headerRight {
+    /* width: 25%; */
+    height: 100%;
+    /* float: left; */
+    display: flex;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    color:  rgb(242, 180, 34);
+    /* background-color: red; */
+}
+
+.booking {
+    color:  white;
+    background-color: rgb(173, 127, 9);
+    width: 60%;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    white-space:nowrap;
+}
+.langDropdownBox {
+    width: 40%;
+    background-color: rgb(240, 233, 233, 0);
+    font-size:medium;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    white-space:nowrap;
+}
+/* .langDropdownBox:hover {
+    color: rgb(115, 46, 9);
+} */ /* Not effective - js modification as scrolls takes precidence */
+
+.booking:hover {
+    background-color: rgb(96, 70, 4);
+}
+a:link {
+    text-decoration: none;
+}
+
+.menuBars {
+    /* display: inline-block; */
+    position: relative;
+    cursor: pointer;
+    /* overflow: hidden; */ /* this interferes with the menuDropdown by clipping on the right side */
+    margin: auto;
+    z-index: 4;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(230, 144, 32);
+    margin: 6px auto 0px auto;
+    /* z-index: 1; */
+}
+
+.menuDropdown {
+    display: none;
+    position: absolute!;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    min-height: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* z-index: 4!important;  */
+}
+.menuDropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.langButton {
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border: none;
+    margin-top: 25px;
+}
+
+#langIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+  .header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.langDropdownItems {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    /* min-height: 200px; */
+    z-index: 10!important;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: white;
+    color: black;
+    text-align: left;
+    margin: 10px;
+}
+
+/* Upon hovering over language box */
+.langDropdownBox:hover > .langDropdownItems {
+    display: block;
+}
+
+.langDropdownItem {
+    margin: 10px auto 5px 10px;
+    /* height: 70px; */
+    width: 80%;
+    color: black;
+    background-color: white;
+}
+.langDropdownItem:hover {
+    background-color: rgb(224, 230, 219);
+}
+
+/* Show the dropdown menu on hover */
+.menuBars:hover .menuDropdown {display: block; background-color: white;}
+
+/* Change color of dropdown links on hover */
+.menuDropdown a:hover {background-color: #ddd;}
+
+@media only screen and (max-width: 600px) {
+    .headerRight {display: none;}
+    .header {height: 60px;}
+}
+@media only screen and (max-width: 860px) {  /* booking width adjusted to avoid wrapping as screens gets smaller */ 
+    .booking {width: 95%;}
+}
+@media only screen and (max-width: 768px) {  /* .booking disppears for small screen, taken over by .footer */
+    /* .booking {display: none;} */
+    .headerRight {display: none;}
+}

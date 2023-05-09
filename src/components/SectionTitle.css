@@ -1,0 +1,30 @@
+/* The following three classes are for the Section Titles */
+.sectionTitle {
+    display: flex;
+    width: 80%;
+    height: 100px;
+    margin: 100px auto 50px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionTitleImg {
+    /* display: block;
+    float: left;
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+    width: 35px;
+    height: 35px; */
+    width: 5%;
+    height: auto;
+    margin: 5px;
+}
+.sectionTitleText {
+    /* float: left;
+    width: 100%; */
+    font-size: 30px;
+    width: 70%;
+    padding-left: 20px;
+    font-weight: bold;
+    color: #834a2a;
+}

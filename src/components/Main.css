@@ -1,0 +1,337 @@
+/* A Block of CSS is moved to App.css - see comment there */
+/* .mainFeature specifies the frame for the image (later images or looping video) on top of the page */
+/* Interesting to note that when using position: fixed, the next element will start as if the fixed element did not exist */
+body {
+    /* background-color: #00709e; rgb(1, 114, 159); */
+    background-color: white;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mainFeatureImg {
+    /* position: fixed; */ 
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: -1; /* <body> is the lowest layer. On top of it is <div mainFeature with z-index of -1, then header/footer 0 */
+}
+
+.featureImgFrame {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* Second main feature photo - may not be needed */
+.mainFeatureImg2 {
+    /* position: fixed; */ 
+    width: 85%;
+    height: auto;
+    margin: 40px auto 0px auto;
+    z-index: -1; /* <body> is the lowest layer. On top of it is <div mainFeature with z-index of -1, then header/footer 0 */
+}
+
+.featureImgFrame2 {
+    width: 100%;
+    height: auto;
+}
+
+/* Main Feature Group 1 3 photos */
+.mainFeatureGroup1, .mainFeatureGroup2, .foodGroup, .activitiesMasterGroup, .activitiesImageGroup, .voicesGroup {
+    display: flex;
+    width: 85%;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.activitiesImageGroup {
+    width: 63%;
+}
+.voicesGroup {
+    width: 90%;
+    /* align-items: flex-start; */
+}
+
+.activitiesMasterGroup {
+    margin-bottom: 30px;
+}
+
+.mainFeatureGroup1Image1 {
+    width: 40%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 25px 25px 0 0;
+}
+.mainFeatureGroup1Text {
+    width: 60%;
+    height: auto;
+    padding-left: 25px!important;
+    /* color: white; */
+    text-align: left;
+}
+
+.mainFeatureGroup1Image2 {
+    width: 40%;
+    border-radius: 0 0 0 0;
+}
+.mainFeatureGroup1Image3 {
+    width: 40%;
+    margin-left: 10px;
+    border-radius: 0 25px 25px 0;
+}
+/* End of mainFeatureGroup1 */
+
+/* Main Feature Group 2 3 photos */
+.mainFeatureGroup2 {
+    /* same as group 1 */
+    justify-content: right;
+}
+
+.mainFeatureGroup2Image1 {
+    width: 40%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 25px 25px 0 0;
+}
+.mainFeatureGroup2Text {
+    width: 60%;
+    height: auto;
+    padding-right: 25px!important;
+    /* color: white; */
+    text-align: left;
+}
+
+.mainFeatureGroup2Image2 {
+    width: 40%;
+    border-radius: 0 0 0 0;
+}
+.mainFeatureGroup2Image3 {
+    width: 40%;
+    margin-right: 10px;
+    border-radius: 25px 0 0 25px;
+}
+/* End of mainFeatureGroup2 */
+
+/* Food Group images and text - v2 */
+.foodGroupImage1 {
+    width: 30%;
+    border-radius: 35px 0 0 0;
+    margin-right: 10px;
+}
+.foodGroupImage2 {
+    width: 34%;
+    border-radius: 0 0 0 0;
+    margin-right: 10px;
+}
+.foodGroupImage3 {
+    width: 31%;
+    border-radius: 0 0 35px 0;
+}
+.foodGroupText {
+    width: 100%;
+    margin-top: 30px;
+    /* color: white; */
+}
+/* End of foods section */
+
+/* Activities section */ 
+.activitiesText {
+    width: 34%;
+    /* color: white; */
+    margin: 15px 0 0 20px;
+}
+.activitiesImage1 {
+    width: 48%;
+    border-radius: 35px 0 0 0;
+    margin-right: 10px;
+}
+.activitiesImage2 {
+    width: 48%;
+    border-radius: 0 35px 0 0;
+}
+.activitiesImage3 {
+    width: 48%;
+    border-radius: 0 0 0 35px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.activitiesImage4 {
+    width: 48%;
+    border-radius: 0 0 35px 0;
+    margin-top: 10px;
+}
+/* End of Activities section */ 
+
+/* The following three classes are for the Section Titles */
+.sectionTitle {
+    width: 40%;
+    height: 60px;
+    margin: 40px auto 20px auto;
+    /* background-color: green; */
+}
+.sectionTitleImg {
+    display: block;
+    float: left;
+    width: 35px;
+    height: 35px;
+}
+.sectionTitleText {
+    float: left;
+    margin-left: 20px;
+    font-weight: strong;
+    color: #452412;
+}
+.sectionMain {
+    width: 85%;
+    margin: auto;
+}
+.sectionEnd {
+    height: 50px;
+}
+.sectionEnd::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.voiceBox {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+}
+.voice {
+    width: 70%;
+    font-weight: normal;
+}
+.voiceName {
+    width: 25%;
+    margin-left: 15px;
+    font-weight: normal;
+}
+
+/* The following adjusts group1 and group2 presentation for small screen */
+@media only screen and (max-width: 768px) {  
+    /* group1 */
+    .mainFeatureGroup1, .mainFeatureGroup1 {
+        justify-content: center;
+    }
+
+    .mainFeatureGroup1Image1 {
+        width: 100%;
+        height: auto;
+        margin: 0 auto 10px auto;
+        border-radius: 25px 25px 0 0;
+        order: 2;
+    }
+    .mainFeatureGroup1Text {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        /* color: white; */
+        text-align: left;
+        margin-bottom: 20px;
+        order: 1;
+    }
+    
+    .mainFeatureGroup1Image2 {
+        width: 100%;
+        margin: 0 auto 10px auto;
+        border-radius: 0 0 0 0;
+        order: 3;
+    }
+    .mainFeatureGroup1Image3 {
+        width: 100%;
+        margin: 0 auto 10px auto;
+        border-radius: 0 0 25px 25px;
+        order: 4;
+    }
+
+    /* group2 */
+    .mainFeatureGroup2Image1 {
+        width: 100%;
+        height: auto;
+        margin: 0 auto 10px auto;
+        border-radius: 25px 25px 0 0;
+        order: 2;
+    }
+    .mainFeatureGroup2Text {
+        width: 100%;
+        height: auto;
+        /* color: white; */
+        text-align: left;
+        margin-bottom: 20px;
+        order: 1;
+    }
+    
+    .mainFeatureGroup2Image2 {
+        width: 100%;
+        margin: 0 auto 10px auto;
+        border-radius: 0 0 0 0;
+        order: 3;
+    }
+    .mainFeatureGroup2Image3 {
+        width: 100%;
+        margin: 0 auto 10px auto;
+        border-radius: 0 0 25px 25px;
+        order: 4;
+    }
+    /* Food Group images and text - v2 */
+    .foodGroupImage1 {
+        width: 100%;
+        border-radius: 35px 35px 0 0;
+        margin-bottom: 10px;
+    }
+    .foodGroupImage2 {
+        width: 100%;
+        border-radius: 0 0 0 0;
+        margin-bottom: 10px;
+    }
+    .foodGroupImage3 {
+        width: 100%;
+        border-radius: 0 0 35px 35px;
+    }
+    .foodGroupText {
+        width: 100%;
+        margin-top: 10px;
+        /* color: white; */
+    }
+
+    /* Activities section */ 
+    .activitiesText {
+        width: 100%;
+        /* color: white; */
+        margin: 0 0 0 20px;
+    }
+    .activitiesImage1 {
+        width: 100%;
+        border-radius: 35px 35px 0 0;
+        margin-bottom: 10px;
+    }
+    .activitiesImage2 {
+        width: 100%;
+        border-radius: 0 0 0 0;
+        margin-bottom: 10px;
+    }
+    .activitiesImage3 {
+        width: 100%;
+        border-radius: 0 0 0 0;
+        margin-bottom: 10px;
+    }
+    .activitiesImage4 {
+        width: 100%;
+        border-radius: 0 0 35px 35px;
+        margin-bottom: 10px;
+    }
+    .activitiesImageGroup, .foodGroup {
+        width: 80%;
+    }
+    /* End of Activities section */ 
+}

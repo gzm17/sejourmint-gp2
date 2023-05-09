@@ -1,0 +1,41 @@
+/* this file defines the contact us ccs attributes */
+.contactUsBox {
+    padding-top: 40px;
+    padding-bottom: 55px;
+    height: 350px;
+    background-color: white;
+    border-top: solid  rgb(162, 206, 243);
+    /* background-color: rgba(235, 243, 246, 0.9); */
+}
+
+.lineColor {
+    border-color: rgb(162, 206, 243);
+    padding-left: 30px;
+}
+
+.titleFrame {
+    padding-left: 30px;
+    color: rgb(208, 121, 8);
+}
+
+.contactUsFrame {
+    padding: 35px;
+    color: rgb(1, 18, 24);
+}
+
+.tableCol1 {
+    width: 25em;
+    padding-right: 15px;
+    text-align: right;
+}
+
+.tableCol2 {
+    width: 40em;
+}
+
+.icons {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    /* background-color: white; */
+}

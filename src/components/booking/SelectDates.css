@@ -1,0 +1,168 @@
+.viewPort {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    color: black;
+}
+
+/* dates selection part */
+.selectDateFrame {
+    width: 550px;
+    height: 500px;
+    margin: 30px auto 30px auto;
+    background-color: white;
+    border-radius: 10px;
+}
+.datesTop {
+    display: flex;
+    margin-top: 15px;
+}
+.arrival, .departure, .arrow {
+    width: 33%;    
+}
+.arrivalDate, .departDate {
+    display: inline-block;
+    border: 1px solid rgb(188, 181, 181);
+    text-align: center;
+    width: 45%;
+    height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+}
+.arrivalDate {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 0px;
+}
+.departDate {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.datesDate {
+    font-size: 2.3em;
+    font-weight: bold;
+    margin-top: 5px;
+    margin: 10px;
+
+}
+.datesMonth {
+    font-size: 1.3em;
+    margin: 7px;
+    font-weight: bold;
+}
+.datesWeek {
+    font-size: 1.3em;
+    margin: 7px;
+}
+.dividingLine{
+    width:96%;
+    height: 1px;
+    background-color: rgb(188, 181, 181);
+    margin-left: 2%;
+    margin-top: 15px;
+}
+
+/* calendar part- css for react-calendar is in file CalendarCustom.css */
+.calendarFrame {
+    width: 600px;
+    height: auto;
+    margin-top: 20%;
+    background-color: white;
+    display: none;
+    border-radius: 6px;
+    position: absolute; /* this and the z-index below ensure the frame overlays on top */
+    z-index: 99;        /* without them, the frame inserts itself into the SelectDates frame */
+}
+
+
+/* Number of guests selection part */
+.numGuestsFrame {
+    margin-top: 10px;
+    width: 90%;
+    display:flex;
+    margin-left: 5%;
+}
+.adults, .kids {
+    width: 100%;    
+    margin: 5px;
+    text-align: left;
+}
+.numPicker {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(188, 181, 181);
+    border-radius: 5px;
+    margin: 3px;
+}
+.numPicker:hover{
+    border: 1px solid rgb(197, 133, 133);
+}
+#minus1, #plus1 {
+    width: 15%;
+    font-size: 1.2em;
+}
+.showNum {
+    width: 70%;
+    font-size: 1.2em;
+}
+.ioSymbol{
+    margin-top: 7px;
+}
+
+/* Last group: promotion code and next */
+.nextButtonFrame {
+    width: 90%;
+}
+.promoCodeTeaser {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 10px auto auto 50px;
+}
+.addCircle {
+    width: 25px;
+    margin-top: 10px;
+}
+.promoCodeIntro {
+    width: 60%;
+    font-size: 1.2em;
+    margin-left: 0px;
+}
+.promoCodeTitle {
+    text-align:left;
+}
+.promoCodeInput {
+    margin-top: 5px;
+    width: 100%;
+    margin-left: 25px;
+    display: none;
+}
+.promoCodeInputBox {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(188, 181, 181);
+    border-radius: 5px;
+}
+.nextButton {
+    background-color: rgb(232, 154, 8);
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin: 15px auto 10px 25px;
+    border: 1px solid rgb(188, 181, 181);
+    border-radius: 5px;
+}
+.nextButton:hover{
+    background-color: rgb(125, 83, 5);
+}
+#forwardLink {
+    padding: 0 40% 0 40%;
+    color: white;
+}

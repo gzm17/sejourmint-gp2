@@ -1,0 +1,175 @@
+.typeBox, .selectedTypeBox {
+    width: 48.0%;
+    height: auto;
+    padding: 7px 0px 7px 0px;
+    background-color: white;
+    border-radius: 6px;
+    margin: 25px auto 0px auto;
+    color: black;
+}
+.phtoFrameManyContainer{ /* used to insert space into photoFrameMany */
+    padding: 15px 25px 15px 25px;
+}
+.selectedTypeBox{
+    display: flex;
+    width: 70%; 
+}
+.maxGuests {
+    display: flex;
+    margin: 0px 25px 0px 25px;
+    align-items: center;
+}
+.maxGuestsSpace {
+    margin-right: 10px;
+}
+.pFontSize{
+    font-size: 20px;
+}
+.roomTPrice {
+    display: flex;
+    /* margin-left: 25px; */
+    align-items: flex-end;
+}
+.roomTPriceProceed, .roomTPriceWords {
+    width: 50%;
+    margin-left: 25px;
+    text-align:left;
+}
+.roomTPriceProceed {
+    margin-right: 25px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.roomTPriceProceedButton{
+    padding: 10px;
+    /* width: 50%; */
+    text-align: end;
+    border-radius: 6px;
+    color: white;
+    background-color: rgba(139, 81, 12, 0.832);
+}
+
+/* The following block css is for selectedType */
+.selectedTypeBox{
+    display: flex;
+    width: 70%; 
+}
+.selectedTypeImgFrame {
+    width: 40%;
+    padding: 15px 15px 15px 25px;
+}
+.selectedTypeDetail {
+    width: 50%;
+    margin-left: 10px;
+    text-align: left;
+}
+
+/* For rendering small screen */
+@media only screen and (max-width: 768px) {
+    .typeBox {
+        width: 100%;
+    }
+    .roomTPriceProceed, .roomTPriceWords {
+        width: 100%;
+    }
+    .selectedTypeBox{
+        display: block;
+        width: 90%;
+    }
+    .selectedTypeImgFrame {
+        width: 100%;
+    }
+    .selectedTypeDetail {
+        width: 100%;
+    }
+}
+
+/* the following block is for SelectedRoomTypeSummary */
+.selectedTypeSumBox {
+    width: 60%;
+    display: flex;
+    border-radius: 6px;
+    background-color: white;
+    margin: 10px auto 10px auto;
+}
+.selectedTypeSumImgFrame {
+    width: 30%;
+    margin: 10px 10px 0px 10px;
+}
+.selectedTypeSum2ndCol {
+    width: 48%;
+}
+.selectedTypeSumLine {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    line-height: 10px;
+}
+.selectedTypeSumArt {
+    width: 25px;
+    height: 25px;
+    color: rgb(163, 111, 13);
+}
+.selectedTypeSumText {
+    text-align: left;
+    margin-left: 15px;
+}
+.selectedTypeSumText1 {
+    text-align: right;
+    margin-left: 15px;
+}
+.selectedTypeSumTitle {
+    text-align: left;
+    margin-left: 0px;
+}
+.selectedTypeSum3rdCol {
+    width: 22%;
+    margin-top: 15px;
+    padding-right: 15px;
+}
+.selectedTypeSumLine1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    line-height: 10px;
+}
+.selectedTypeRemoveButton, .selectedTypeEditButton {
+    width: 45%;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(193, 189, 189);
+    margin: 15px 10px auto 10px;
+    padding-top: 15px;
+    font-size: 15px;
+    color: black;
+}
+
+/* For rendering small screen */
+@media only screen and (max-width: 768px) {
+    .selectedTypeSumBox {
+        width: 90%;
+        display: block;
+    }
+    .selectedTypeSumImgFrame {
+        width: 90%;
+        margin: 30px auto 0px auto;
+        padding-top: 20px;
+    }
+    .selectedTypeSum2ndCol {
+        width: 100%;
+        padding-left: 25px;
+    }
+    .selectedTypeSum3rdCol {
+        width: 100%;
+    }
+    .selectedTypeRemoveButton, .selectedTypeEditButton {
+        width: 30%;
+        margin: 15px 10px auto 10px;
+    }
+    .selectedTypeSumLine1 {
+        justify-content: center;
+        padding: 15px 0px 15px 0px;;
+    }
+}

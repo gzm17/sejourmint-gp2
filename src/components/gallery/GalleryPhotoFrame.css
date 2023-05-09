@@ -1,0 +1,139 @@
+/* defines the css for gallery frame */
+.galleryPhotoFrame {
+    width: 80%;
+    margin: 30px auto 0px auto;
+    padding-bottom: 35px;;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    column-gap: 2px;
+    /* background-color:rgba(235, 243, 246, 0.9); */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2px;
+    margin-right: 0px;
+    vertical-align: middle;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .galleryPhotoFrame {column-count: 2; width: 90%;}
+  }
+
+  #modal {
+    position: fixed;
+    width: 100vw!important;
+    height: 100vh!important;
+    top: 0;
+    left: 0;
+    /* text-align: center; */
+    background-color: black;
+  }
+  
+  .swiperFrame {
+    max-width: 90vw;
+    height: 90vh;
+    margin: auto;
+    /* width: auto; */
+    /* height: 100%;
+    margin: auto;
+    color: white; */
+    /* height: 100%; set a fixed height for the container */
+    /* width: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: middle; 
+    position: relative;
+    /* overflow-x: hidden; */
+} 
+
+/* LESSONS Learned: in using height: 100%, somehow it always use full width, and has to scroll height. but with specific height, as shown here 90vh, it scales width */
+
+  .gallerySlidesFrame, #slideFrame {
+    /* max-width: auto!important;
+    max-height: 100%!important; */
+    width: auto!important;
+    height: 90vh!important;
+    object-fit: cover;
+    /* object-fit: cover;
+    object-position: center;  */
+  }
+
+  .modalHeadreHeight {
+    padding: 0px;
+  }
+
+  .closeModalButton, button {
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    background-color: black;
+    border: 2px solid black;
+    font-size: 30px;
+  }
+  .crossIcon {
+    color: white;
+    background-color: black;
+  }
+
+  /* ---- below is from swiper example ---- */
+  .swiper {
+    width: 100%;
+    height:100%;
+  }
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide > img {
+  /* display: block; */
+  width: auto!important;
+  height: 70vh!important;
+  object-fit: cover;
+}
+
+/* Change the color of navigation buttons on both sides of the frame */
+.swiper-button-prev, .swiper-button-next {
+  color: rgb(222, 209, 209); 
+  opacity: 0.7;
+}
+
+.swiper-button-prev {
+  margin-left: 18px;
+}
+
+.swiper-button-next {
+  margin-right: 18px;
+}
+
+/* change the color of the pagination bullets both passive and active */
+/* change the size of the bullet and active color */
+.swiper-pagination-bullet {
+  background-color: rgb(250, 250, 252);
+  /* display: inline-block;
+  width: 2rem;
+  height: 2rem; */
+}

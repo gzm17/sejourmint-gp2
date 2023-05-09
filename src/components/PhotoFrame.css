@@ -1,0 +1,17 @@
+/* PhotoFrame defines first the overall frame including captions (PhotoFrame), then imageFrame which defines the image size */
+.photoFrame {
+    width: 100%;
+    height: auto;
+}
+
+.imageFrame {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* padding: 10px 25px 10px 25px; */
+}
+
+.captionFrame {
+    color: white;
+    padding-top: 15px;
+}

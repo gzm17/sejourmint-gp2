@@ -1,0 +1,68 @@
+/* BEGIN - this block of css was moved from Main.css */
+.App {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* this makes jumping smooth */
+  scroll-padding-top: 5rem; /* this makes the jumped section below the nav bar */
+}
+
+/* the following defines the column system used by the app, all from scratch
+The system is designed for two screen displays: extra small (phones) and rest (ipads, desktops) 
+The system uses mobile first philosophy whenever possible */
+
+/* for phones screen - (max-width: 600px): 
+top menu (col-sm-top): first col is the first 15% for dropdown bars, second rest for hotel name
+bottom (col-sm-bottom-*): only two types defined. 25% for symbols, 50% for booking 
+*/
+@media only screen and (max-width: 600px) {
+  .col-sm-top1 {width: 15%}
+  .col-sm-top2 {width: 85%}
+  .col-sm-bottom1 {width: 25%}
+  .col-sm-bottom2 {width: 50%}
+  .col-sm-full {width: 100%}
+}
+
+/* for tablets screen - (max-width:600px) to (min-width: 768px). It is OK to chain multiple '() and() and ()'. 
+Placeholder: probably not needed. Can change the lower bound 600px to tweek screen boundary */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .col-md-top1 {width: 15%}
+  .col-md-top2 {width: 85%}
+  .col-md-bottom1 {width: 25%}
+  .col-md-bottom2 {width: 50%}
+  .col-md-3 {width: 25%}
+  .col-md-half {width: 50%}
+  .col-md-full {width: 100%}
+}
+
+/* for tablets and desktops screen - (min-width: 600px): 
+this is the full def of the 12 col system so there are 12 column widths as below  */
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+[class*="col-"] { /* this command applies to both small and large */
+  float: left;
+  padding: 15px;
+}
+
+/* END - Main.css block */

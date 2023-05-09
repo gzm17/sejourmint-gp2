@@ -1,0 +1,11 @@
+/* css for the main section text under each section title (or the main photo for overall site) */
+.sectionText {
+    /* margin-top: 500px; */
+    width: 100%;
+    margin: 30px auto 30px auto;
+}
+
+.sectionParagraph {
+    /* margin: 30px 0px 0px 0px; */
+    /* color: white; */
+}

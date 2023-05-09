@@ -1,0 +1,149 @@
+/* This is CSS for the header for Booking components - the header stays on top for all components */
+.bookingHeaderFrame {
+    margin-top: 90px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: rgb(232, 233, 236);
+    /* background-color: rgba(235, 243, 246, 0.9); */
+}
+
+/* The css feature used here is called flexbox. See w3c/css/advanced/flexbox */
+.bookingHeaderMenu, .bookingHeaderMenuSmall {
+    display: flex;           /* this has to be flex, or else below two commands do not work */
+    width: 100%;
+    height: 70px;
+    align-items: center;    
+    border-bottom: solid rgb(123, 147, 190);
+    justify-items: left;
+    /* background-color: rgb(152, 140, 140); */
+}
+.bookingHeaderMenu {
+    position: sticky;
+    top: 90px;
+    background-color: rgb(232, 233, 236);
+    z-index: 2;
+    flex-direction:row;
+
+}
+.bookingHeaderMenuSmall {
+    display: none;
+}
+
+.bookingHeaderButtons, .bookingHeaderButtons1 {
+    display: flex;
+    float: left;
+    width: 22%;
+    height: 60%;
+    align-items: center;
+}
+.bookingHeaderButtons1 {
+    width: 12%;
+}
+.symbol {
+    float: left;
+    color: rgb(5, 67, 5);
+    width: 33px;
+    height: 30px;
+    margin-left: 15px;
+    size: 30px;
+}
+.bookButton {
+    margin-top: 5px;
+}
+.bookHeaderMenuItem {
+    float: left;
+    color: rgb(27, 54, 105);
+    /* width: 50%; */
+    font-size: 20px;
+    white-space: nowrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    /* border-bottom: solid rgb(123, 147, 190); */
+}
+.strike {
+    /* position: absolute; */
+    float: left;
+    width: 40%;
+    height: 1px;
+    background-color: black;
+    top: 25px;
+    overflow: hidden;
+}
+
+.bookHeaderMenuItem:hover {
+    color: rgb(62, 108, 193);
+    border-bottom: solid 0.2em rgb(123, 147, 190)!important;
+}
+
+.bookHeaderMenuItem:focus { /* This makes the link highlighted after click */
+    color: rgb(62, 108, 193);
+    border-bottom: solid 0.2em rgb(123, 147, 190)!important;
+}
+/* for small screen only - linking menu items */
+.verticalDivider {
+    display: none;
+}
+#collapseMenu {
+    display: none;
+    margin-right: 15px; 
+}
+
+/* For small screens */
+@media only screen and (max-width: 768px) {
+    .bookingHeaderMenuSmall {
+        display: flex;
+    }
+    .bookingHeaderMenu {
+        display: none;
+        flex-direction:column;
+        height: auto;
+    }
+    .bookingHeaderButtons, .bookingHeaderButtons1 {
+        display: flex;
+        float: left;
+        width: 100%;
+        height: 35px;
+        align-items: center;
+    }
+    .strike, .strikeSmall {
+        /* position: absolute; */
+        width: 100%;
+        margin-right: 30px;
+        height: 0px;
+    }
+    .verticalDivider {
+        display: block;
+        width: 100%;
+        margin-left: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        text-align: left;
+    }
+    .nowStep, #expandMenu {
+        float: left;
+        color: rgb(5, 67, 5);
+        width: 33px;
+        height: 30px;
+        size: 30px;
+        margin-right: 20px;
+    }
+    #collapseMenu {
+        display: inline-block;
+    }
+    #expandMenu {
+        margin-right: 30px;
+    }
+}
+
+/* THIS BLOCK DOES NOT TAKE EFFECT */
+@media only screen and (min-width: 768px) {
+    .bookingHeaderMenuSmall {
+        display: none;
+    }
+    .bookingHeaderMenu {
+        display: flex;
+        flex-direction:row;
+    }
+}
