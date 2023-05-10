@@ -1,16 +1,29 @@
 {
   "files": {
     "main.css": "/sejourmint-gp2/static/css/main.f77cf87f.css",
-    "main.js": "/sejourmint-gp2/static/js/main.1030beb7.js",
+    "main.js": "/sejourmint-gp2/static/js/main.c3d757fa.js",
     "static/js/787.9d00e0ec.chunk.js": "/sejourmint-gp2/static/js/787.9d00e0ec.chunk.js",
+    "static/media/activities-2.jpg": "/sejourmint-gp2/static/media/activities-2.aaff920a9820f9b9c970.jpg",
+    "static/media/f3-choukokuji.jpg": "/sejourmint-gp2/static/media/f3-choukokuji.372f2859f4859dd9265c.jpg",
+    "static/media/foods-beer.jpg": "/sejourmint-gp2/static/media/foods-beer.6d2611bdf98e6a5307c8.jpg",
+    "static/media/foods-diningRm.jpg": "/sejourmint-gp2/static/media/foods-diningRm.89d70ff6f73bb292bfb9.jpg",
+    "static/media/activities-3.jpg": "/sejourmint-gp2/static/media/activities-3.e9019b991f90e0c99757.jpg",
+    "static/media/mf-welcome1.jpg": "/sejourmint-gp2/static/media/mf-welcome1.6d20ade834823faa79a8.jpg",
+    "static/media/f1-goryu-night.jpg": "/sejourmint-gp2/static/media/f1-goryu-night.68832e73a7864cf35b4c.jpg",
+    "static/media/activities-4.jpg": "/sejourmint-gp2/static/media/activities-4.fb5ad139d155eeaf896b.jpg",
+    "static/media/f2-ski-ita.jpg": "/sejourmint-gp2/static/media/f2-ski-ita.f885c49fa91230a9b6ae.jpg",
     "static/media/mf-win-back.jpg": "/sejourmint-gp2/static/media/mf-win-back.9a4e9937e0482df6019e.jpg",
+    "static/media/mf-welcome3.jpg": "/sejourmint-gp2/static/media/mf-welcome3.a31f52497288cf6354c4.jpg",
+    "static/media/activities-1.jpg": "/sejourmint-gp2/static/media/activities-1.457783c90f50682567ce.jpg",
+    "static/media/mf-welcome2.jpg": "/sejourmint-gp2/static/media/mf-welcome2.fd6a84e01388b88c8cf1.jpg",
+    "static/media/foods-dinner.jpg": "/sejourmint-gp2/static/media/foods-dinner.b1879bb971345075dd37.jpg",
     "index.html": "/sejourmint-gp2/index.html",
     "main.f77cf87f.css.map": "/sejourmint-gp2/static/css/main.f77cf87f.css.map",
-    "main.1030beb7.js.map": "/sejourmint-gp2/static/js/main.1030beb7.js.map",
+    "main.c3d757fa.js.map": "/sejourmint-gp2/static/js/main.c3d757fa.js.map",
     "787.9d00e0ec.chunk.js.map": "/sejourmint-gp2/static/js/787.9d00e0ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f77cf87f.css",
-    "static/js/main.1030beb7.js"
+    "static/js/main.c3d757fa.js"
   ]
 }
