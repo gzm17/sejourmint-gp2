@@ -8,10 +8,14 @@ const SectionTitle = (props) => {
 
     return (
         <div id={id} className='sectionTitle'>
-            <img className='sectionTitleImg' src='assets/images/icons/icon-winter.svg' alt='feature title svg'/>
+            <img className='sectionTitleImg' src={process.env.PUBLIC_URL+'assets/images/icons/icon-winter.svg'} alt='feature title svg'/>
+            <img className='sectionTitleImg' src={process.env.PUBLIC_URL+'assets/images/icons/icon-spring.svg'} alt='feature title svg'/>
+            <img className='sectionTitleImg' src={process.env.PUBLIC_URL+'assets/images/icons/icon-summer.svg'} alt='feature title svg'/>
+            <img className='sectionTitleImg' src={process.env.PUBLIC_URL+'assets/images/icons/icon-fall.svg'} alt='feature title svg'/>
+            {/* <img className='sectionTitleImg' src='assets/images/icons/icon-winter.svg' alt='feature title svg'/>
             <img className='sectionTitleImg' src='assets/images/icons/icon-spring.svg' alt='feature title svg'/>
             <img className='sectionTitleImg' src='assets/images/icons/icon-summer.svg' alt='feature title svg'/>
-            <img className='sectionTitleImg' src='assets/images/icons/icon-fall.svg' alt='feature title svg'/>
+            <img className='sectionTitleImg' src='assets/images/icons/icon-fall.svg' alt='feature title svg'/> */}
         <p className='sectionTitleText'>{titleText}</p>
     </div>
     )

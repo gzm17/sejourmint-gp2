@@ -27,7 +27,7 @@ function GalleryPhotoFrame(props) {
             <SwiperSlide key={image.id} >
                 <div>
                     {/* <img src={image.image} alt={'swiper ' + image.image} /> */}
-                    <img src={image.image} id='slideFrame' className='gallerySlidesFrame' alt={'swiper ' + image.image} />
+                    <img src={process.env.PUBLIC_URL+image.image} id='slideFrame' className='gallerySlidesFrame' alt={'swiper ' + image.image} />
                 </div>
             </SwiperSlide>
         )
@@ -45,7 +45,7 @@ function GalleryPhotoFrame(props) {
     const selectedGallery = props.imageArray.map(image => {
         return (
             <div key={image.id} onClick={()=>toggleModal(image.id)} >
-                <img key={image.id} src={image.image} alt={'image: ' + image.image} />
+                <img key={image.id} src={process.env.PUBLIC_URL+image.image} alt={'image: ' + image.image} />
                 {/* <img key={image.id} src={image.image} alt={'image: ' + image.image} /> */}
             </div>
         )

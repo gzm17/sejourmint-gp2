@@ -19,7 +19,9 @@ const PhotoFrameMany = (props) => {
         return (
             <SwiperSlide key={image.id} >
                 <div>
-                    <img src={image.image} className='imageFrameMany' alt='swiper' />
+                    <img src={process.env.PUBLIC_URL+image.image} className='imageFrameMany' alt='swiper' />
+
+                    {/* <img src={image.image} className='imageFrameMany' alt='swiper' /> */}
                 </div>
             </SwiperSlide>
         )

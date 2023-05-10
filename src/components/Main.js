@@ -28,6 +28,22 @@ import {activities} from '../data/activities/activities';
 
 // import images
 import topImage from '../assets/images/mainFeature/mf-win-back.jpg';
+import welcome1 from '../assets/images/mainFeature/mf-welcome1.jpg';
+import welcome2 from '../assets/images/mainFeature/mf-welcome2.jpg';
+import welcome3 from '../assets/images/mainFeature/mf-welcome3.jpg';
+import feature1 from '../assets/images/features/f1-goryu-night.jpg';
+import feature2 from '../assets/images/features/f2-ski-ita.jpg';
+import feature3 from '../assets/images/features/f3-choukokuji.jpg';
+
+import foods1 from '../assets/images/foods/foods-dinner.jpg';
+import foods2 from '../assets/images/foods/foods-diningRm.jpg';
+import foods3 from '../assets/images/foods/foods-beer.jpg';
+
+import act1 from '../assets/images/activities/activities-1.jpg';
+import act2 from '../assets/images/activities/activities-2.jpg';
+import act3 from '../assets/images/activities/activities-3.jpg';
+import act4 from '../assets/images/activities/activities-4.jpg';
+
 
 // This lays out the main page, including the header (navbar), footer, and everything in between
 // All contents are in terms of components, with Main as the mother of components 
@@ -181,12 +197,15 @@ function Main(props) {
             {/* Group1 Feature: Hotel Welcome Section with three photos */}
             <SectionTitle ids='features' title={welcomeHeading} />
             <div className='mainFeatureGroup1'>
-                <img src='../../assets/images/mainFeature/mf-welcome1.jpg' className='mainFeatureGroup1Image1' alt='Hotel Sejour Mint Winter 2' />
+                <img src={welcome1} className='mainFeatureGroup1Image1' alt='Hotel Sejour Mint Winter 2' />
+                {/* <img src='../../assets/images/mainFeature/mf-welcome1.jpg' className='mainFeatureGroup1Image1' alt='Hotel Sejour Mint Winter 2' /> */}
                 <div className='mainFeatureGroup1Text'> {welcome}
                     {/* <SectionText text={mainFeatureText} language={props.language}/> */}
                 </div>
-                <img src='../../assets/images/mainFeature/mf-welcome2.jpg' className='mainFeatureGroup1Image2' alt='Hotel Sejour Mint Winter 2' />
-                <img src='../../assets/images/mainFeature/mf-welcome3.jpg' className='mainFeatureGroup1Image3' alt='Hotel Sejour Mint Winter 2' />
+                <img src={welcome2} className='mainFeatureGroup1Image2' alt='Hotel Sejour Mint Winter 2' />
+                {/* <img src='../../assets/images/mainFeature/mf-welcome2.jpg' className='mainFeatureGroup1Image2' alt='Hotel Sejour Mint Winter 2' /> */}
+                <img src={welcome3} className='mainFeatureGroup1Image3' alt='Hotel Sejour Mint Winter 2' />
+                {/* <img src='../../assets/images/mainFeature/mf-welcome3.jpg' className='mainFeatureGroup1Image3' alt='Hotel Sejour Mint Winter 2' /> */}
             </div>
             <div className='sectionEnd'>{}</div>
 
@@ -195,9 +214,12 @@ function Main(props) {
             <div className='mainFeatureGroup2'>
                 <div className='mainFeatureGroup2Text'> {convenience}
                 </div>
-                <img src='../../assets/images/features/f1-goryu-night.jpg' className='mainFeatureGroup2Image1' alt='Hotel Sejour Mint Winter 2' />
+                <img src={feature1} className='mainFeatureGroup2Image1' alt='Hotel Sejour Mint Winter 2' />
+                <img src={feature3} className='mainFeatureGroup2Image3' alt='Hotel Sejour Mint Winter 2' />
+                <img src={feature2} className='mainFeatureGroup2Image2' alt='Hotel Sejour Mint Winter 2' />
+                {/* <img src='../../assets/images/features/f1-goryu-night.jpg' className='mainFeatureGroup2Image1' alt='Hotel Sejour Mint Winter 2' />
                 <img src='../../assets/images/features/f3-choukokuji.jpg' className='mainFeatureGroup2Image3' alt='Hotel Sejour Mint Winter 2' />
-                <img src='../../assets/images/features/f2-ski-ita.jpg' className='mainFeatureGroup2Image2' alt='Hotel Sejour Mint Winter 2' />
+                <img src='../../assets/images/features/f2-ski-ita.jpg' className='mainFeatureGroup2Image2' alt='Hotel Sejour Mint Winter 2' /> */}
             </div>
             <div className='sectionEnd'>{}</div>
 
@@ -220,9 +242,12 @@ function Main(props) {
             a placeholder but with real information */}
             <SectionTitle ids='foods' title={foodHeading} />
             <div className='foodGroup'>
-                <img src='../../assets/images/foods/foods-dinner.jpg' className='foodGroupImage1' alt='Foods Dinner' />
+                <img src={foods1} className='foodGroupImage1' alt='Foods Dinner' />
+                <img src={foods2} className='foodGroupImage2' alt='Foods Dinning Room' />
+                <img src={foods3} className='foodGroupImage3' alt='Foods Beer' />
+                {/* <img src='../../assets/images/foods/foods-dinner.jpg' className='foodGroupImage1' alt='Foods Dinner' />
                 <img src='../../assets/images/foods/foods-diningRm.jpg' className='foodGroupImage2' alt='Foods Dinning Room' />
-                <img src='../../assets/images/foods/foods-beer.jpg' className='foodGroupImage3' alt='Foods Beer' />
+                <img src='../../assets/images/foods/foods-beer.jpg' className='foodGroupImage3' alt='Foods Beer' /> */}
                 <div className='foodGroupText'> {foodndrinks}</div>
             </div>
             <div className='sectionEnd'>{}</div>
@@ -240,10 +265,14 @@ function Main(props) {
             <SectionTitle ids='activities' title={actHeading} />
             <div className='activitiesMasterGroup'>
                 <div className='activitiesImageGroup'>
-                    <img src='../../assets/images/activities/activities-1.jpg' className='activitiesImage1' alt='Act 1' />
+                    <img src={act1} className='activitiesImage1' alt='Act 1' />
+                    <img src={act2} className='activitiesImage2' alt='Act 2' />
+                    <img src={act3} className='activitiesImage3' alt='Act 3' />
+                    <img src={act4} className='activitiesImage4' alt='Act 4' />
+                    {/* <img src='../../assets/images/activities/activities-1.jpg' className='activitiesImage1' alt='Act 1' />
                     <img src='../../assets/images/activities/activities-2.jpg' className='activitiesImage2' alt='Act 2' />
                     <img src='../../assets/images/activities/activities-3.jpg' className='activitiesImage3' alt='Act 3' />
-                    <img src='../../assets/images/activities/activities-4.jpg' className='activitiesImage4' alt='Act 4' />
+                    <img src='../../assets/images/activities/activities-4.jpg' className='activitiesImage4' alt='Act 4' /> */}
                 </div>
                 <div className='activitiesText'> {activities}</div>
             </div>
