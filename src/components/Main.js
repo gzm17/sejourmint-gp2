@@ -26,6 +26,9 @@ import {roomType} from '../data/rooms/roomTypes1';
 import {foods} from '../data/foods/foods';
 import {activities} from '../data/activities/activities';
 
+// import images
+import topImage from '../assets/images/mainFeature/mf-win-back.jpg';
+
 // This lays out the main page, including the header (navbar), footer, and everything in between
 // All contents are in terms of components, with Main as the mother of components 
 
@@ -161,7 +164,9 @@ function Main(props) {
 
             {/* The following div is for the main image - which later may become a set of images or video clip */}
             <div className='mainFeatureImg'>
-                <img src='%PUBLIC_URL%/assets/images/mainFeature/mf-win-back.jpg' className='featureImgFrame' alt='Hotel Sejour Mint Winter 04' />
+                <img src={topImage} className='featureImgFrame' alt='Hotel Sejour Mint Winter 05 - import ' />
+
+                {/* <img src='%PUBLIC_URL%/assets/images/mainFeature/mf-win-back.jpg' className='featureImgFrame' alt='Hotel Sejour Mint Winter 04' /> */}
             </div>
 
             {/* Inserts the summary text */}

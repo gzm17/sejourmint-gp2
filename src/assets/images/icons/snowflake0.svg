@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-510 -450 1020 900" version="1.1">
+<defs>
+<path id="a" d="M18.6 0 37 12h102v30h24v-30 h24 v45 h24v-45 h70 v60 h24 v-60 h45 l100 80 l17-17 l-83-63 h45l40 40l17-17l-23-23h45 v-24 h-45 l23 -23 l-17 -17 l-40 40 h-45 l83 -63 l-17-17 l-100 80 h-45v-60 h-24 v60 h-70 v-45 h-24 v45 h-24 v-30 h-24 v30 h-102 z"/>
+<path id="m" d="M 38 8h68v12h15v-12h24v20h15v-20 h52 v30 h15 v-30 h40 l50 50l9-9l-41-41 h40 l25 25l9-9 l-16-16 h40 v-16 h-40 l16-16 l-9-9 l-25 25 h-40 l41-41 l-9-9 l-50 50 h-40 v-30 h-15 v30 h-52v-20 h-15 v20 h-24 v-12 h-15 v12 h-68 z"/> 
+<g id="s">
+	<use xlink:href="#a"/>
+	<use xlink:href="#m" transform="rotate(30)"/>
+</g>
+<linearGradient id="lightblue">
+<stop stop-color="#fff" offset=".5"/>
+<stop stop-color="#bff" offset="0.9"/>
+</linearGradient>
+</defs>
+<g id="flake" fill="url(#lightblue)" stroke="blue" stroke-width="2">
+	<use xlink:href="#s"/>
+	<use xlink:href="#s" transform="rotate(-60)"/>
+	<use xlink:href="#s" transform="rotate(60)"/>
+	<use xlink:href="#s" transform="rotate(-120)"/>
+	<use xlink:href="#s" transform="rotate(120)"/>
+	<use xlink:href="#s" transform="rotate(180)"/>
+</g>
+</svg>
