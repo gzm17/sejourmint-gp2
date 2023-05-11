@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import { FcUp } from "react-icons/fc";
+import { HashLink as Link1 } from 'react-router-hash-link';
+
 import './Main.css'
 import './Footer.css'
+import { Outlet } from 'react-router-dom';
 
 const Footer = (props) => {
     // BEGIN - This block of code changes the opacity of the bottom block indicator 
@@ -78,9 +81,12 @@ const Footer = (props) => {
                         <img src={langIcon} alt={'language icon: ' + props.language} id='langIcon' />
                     </button>  */}
                 </div>
-                <a href='/gallery' className='bottomSmallScreen2'>{gallery}</a>
-                <a className='bookingBottom' href='/booking' >{booking}</a>
+                <Link1 to='gallery' className='bottomSmallScreen2'>{gallery}</Link1>
+                <Link1 to='booking' className='bookingBottom'>{booking}</Link1>
+                {/* <a href='/gallery' className='bottomSmallScreen2'>{gallery}</a>
+                <a className='bookingBottom' href='/booking' >{booking}</a> */}
             </div>
+            <Outlet />
 
         </div>
 
