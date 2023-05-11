@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sejourmint-gp2/static/css/main.f77cf87f.css",
-    "main.js": "/sejourmint-gp2/static/js/main.c3d757fa.js",
+    "main.js": "/sejourmint-gp2/static/js/main.b398a7ec.js",
     "static/js/787.9d00e0ec.chunk.js": "/sejourmint-gp2/static/js/787.9d00e0ec.chunk.js",
     "static/media/activities-2.jpg": "/sejourmint-gp2/static/media/activities-2.aaff920a9820f9b9c970.jpg",
     "static/media/f3-choukokuji.jpg": "/sejourmint-gp2/static/media/f3-choukokuji.372f2859f4859dd9265c.jpg",
@@ -17,13 +17,16 @@
     "static/media/activities-1.jpg": "/sejourmint-gp2/static/media/activities-1.457783c90f50682567ce.jpg",
     "static/media/mf-welcome2.jpg": "/sejourmint-gp2/static/media/mf-welcome2.fd6a84e01388b88c8cf1.jpg",
     "static/media/foods-dinner.jpg": "/sejourmint-gp2/static/media/foods-dinner.b1879bb971345075dd37.jpg",
+    "static/media/icon-spring.png": "/sejourmint-gp2/static/media/icon-spring.ac09005072cae29fa1d1.png",
+    "static/media/icon-winter.png": "/sejourmint-gp2/static/media/icon-winter.0260ed793ab73844bb96.png",
+    "static/media/icon-summer.png": "/sejourmint-gp2/static/media/icon-summer.745fb2db4e7753914504.png",
     "index.html": "/sejourmint-gp2/index.html",
     "main.f77cf87f.css.map": "/sejourmint-gp2/static/css/main.f77cf87f.css.map",
-    "main.c3d757fa.js.map": "/sejourmint-gp2/static/js/main.c3d757fa.js.map",
+    "main.b398a7ec.js.map": "/sejourmint-gp2/static/js/main.b398a7ec.js.map",
     "787.9d00e0ec.chunk.js.map": "/sejourmint-gp2/static/js/787.9d00e0ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f77cf87f.css",
-    "static/js/main.c3d757fa.js"
+    "static/js/main.b398a7ec.js"
   ]
 }
