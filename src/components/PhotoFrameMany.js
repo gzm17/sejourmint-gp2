@@ -16,10 +16,11 @@ import './Main.css'
 
 const PhotoFrameMany = (props) => {
     const photos = props.images.map(image => {
+        const filename = image.image.split('/');
         return (
             <SwiperSlide key={image.id} >
                 <div>
-                    <img src={process.env.PUBLIC_URL+image.image} className='imageFrameMany' alt='swiper' />
+                    <img src={process.env.PUBLIC_URL+image.image} className='imageFrameMany' alt={'swiper-'+filename[filename.length-1]} />
 
                     {/* <img src={image.image} className='imageFrameMany' alt='swiper' /> */}
                 </div>

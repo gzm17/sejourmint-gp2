@@ -101,7 +101,7 @@ const Header = (props) => {
                 <Outlet />
             </div>
             <div className='col-6 col-sm-top2 col-md-top2 headerCenter'>  {/* middle 50% container for hotel name */}
-                <h2 id='hotelName'>Hotel Sejour Mint</h2>
+                <h1 id='hotelName'>Hotel Sejour Mint</h1>
             </div>
             <div className='col-3 headerRight'>             {/* right 25% container for booking button for big screen */}
                 <div id='langWord' className='langDropdownBox'>{langWord}

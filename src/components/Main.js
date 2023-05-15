@@ -195,16 +195,16 @@ function Main(props) {
             <div className='sectionEnd'></div> */}
 
             {/* Group1 Feature: Hotel Welcome Section with three photos */}
-            <SectionTitle ids='features' title={welcomeHeading} />
+            <SectionTitle ids='welcome' title={welcomeHeading} />
             <div className='mainFeatureGroup1'>
-                <img src={welcome1} className='mainFeatureGroup1Image1' alt='Hotel Sejour Mint Winter 2' />
+                <img src={welcome1} className='mainFeatureGroup1Image1' alt='Welcome 1' />
                 {/* <img src='../../assets/images/mainFeature/mf-welcome1.jpg' className='mainFeatureGroup1Image1' alt='Hotel Sejour Mint Winter 2' /> */}
                 <div className='mainFeatureGroup1Text'> {welcome}
                     {/* <SectionText text={mainFeatureText} language={props.language}/> */}
                 </div>
-                <img src={welcome2} className='mainFeatureGroup1Image2' alt='Hotel Sejour Mint Winter 2' />
+                <img src={welcome2} className='mainFeatureGroup1Image2' alt='Welcome 2' />
                 {/* <img src='../../assets/images/mainFeature/mf-welcome2.jpg' className='mainFeatureGroup1Image2' alt='Hotel Sejour Mint Winter 2' /> */}
-                <img src={welcome3} className='mainFeatureGroup1Image3' alt='Hotel Sejour Mint Winter 2' />
+                <img src={welcome3} className='mainFeatureGroup1Image3' alt='Welcome 3' />
                 {/* <img src='../../assets/images/mainFeature/mf-welcome3.jpg' className='mainFeatureGroup1Image3' alt='Hotel Sejour Mint Winter 2' /> */}
             </div>
             <div className='sectionEnd'>{}</div>
@@ -214,9 +214,9 @@ function Main(props) {
             <div className='mainFeatureGroup2'>
                 <div className='mainFeatureGroup2Text'> {convenience}
                 </div>
-                <img src={feature1} className='mainFeatureGroup2Image1' alt='Hotel Sejour Mint Winter 2' />
-                <img src={feature3} className='mainFeatureGroup2Image3' alt='Hotel Sejour Mint Winter 2' />
-                <img src={feature2} className='mainFeatureGroup2Image2' alt='Hotel Sejour Mint Winter 2' />
+                <img src={feature1} className='mainFeatureGroup2Image1' alt='Feature 1' />
+                <img src={feature3} className='mainFeatureGroup2Image3' alt='Feature 3' />
+                <img src={feature2} className='mainFeatureGroup2Image2' alt='Feature 2' />
                 {/* <img src='../../assets/images/features/f1-goryu-night.jpg' className='mainFeatureGroup2Image1' alt='Hotel Sejour Mint Winter 2' />
                 <img src='../../assets/images/features/f3-choukokuji.jpg' className='mainFeatureGroup2Image3' alt='Hotel Sejour Mint Winter 2' />
                 <img src='../../assets/images/features/f2-ski-ita.jpg' className='mainFeatureGroup2Image2' alt='Hotel Sejour Mint Winter 2' /> */}
@@ -282,10 +282,6 @@ function Main(props) {
             <div style={{backgroundColor: 'rgb(255, 242, 230)'}}>
                 <SectionTitle ids='voices' title={voices} />
                 <div className='voicesGroup'>
-                        <div className='voiceBox'>
-                            <div className='voice'>{voicesText.v1}</div>
-                            <div className='voiceName'>{voicesText.v1name}</div>
-                        </div>
 
                         <div className='voiceBox'>
                             <div className='voice'>{voicesText.v1}</div>

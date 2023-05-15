@@ -22,12 +22,14 @@ function GalleryPhotoFrame(props) {
         </div>
       );
 
+      // photos renders the modal of images using swiper
     const photos = props.imageArray.map(image => {
+        const filename = image.image.split('/');
         return (
             <SwiperSlide key={image.id} >
                 <div>
                     {/* <img src={image.image} alt={'swiper ' + image.image} /> */}
-                    <img src={process.env.PUBLIC_URL+image.image} id='slideFrame' className='gallerySlidesFrame' alt={'swiper ' + image.image} />
+                    <img src={process.env.PUBLIC_URL+image.image} id='slideFrame' className='gallerySlidesFrame' alt={'swiper-' + filename[filename.length-1]} />
                 </div>
             </SwiperSlide>
         )
@@ -40,12 +42,14 @@ function GalleryPhotoFrame(props) {
             clickedImageIndex: id })
     }
 
+    // selectedGallery is for rendering thumbnails of images for the chosen category
     // Below assignment is a hack: trying to print videos are coming when videos is selected, '' otherwise
     // A new component for videos will be needed, and this necessity will be gone.
     const selectedGallery = props.imageArray.map(image => {
+        const filename = image.image.split('/');
         return (
             <div key={image.id} onClick={()=>toggleModal(image.id)} >
-                <img key={image.id} src={process.env.PUBLIC_URL+image.image} alt={'image: ' + image.image} />
+                <img key={image.id} src={process.env.PUBLIC_URL+image.image} alt={filename[filename.length-1]} />
                 {/* <img key={image.id} src={image.image} alt={'image: ' + image.image} /> */}
             </div>
         )
