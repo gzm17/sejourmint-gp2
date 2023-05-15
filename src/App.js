@@ -156,7 +156,9 @@ export default function App() {
   const videosMsg = <p>Videos are coming soon.</p>;
 
   return (
-      <BrowserRouter>
+      <BrowserRouter basename="/sejourmint-gp2" >
+      {/* <BrowserRouter> */}
+
         <div className="App">
           <Header changeLanguage={changeLanguage} language={language}/>
           <Routes>
