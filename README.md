@@ -74,3 +74,23 @@ working on SelectRoomTypes.js component. RoomTypes.js' two exports are half done
 Trying to figure out how to use PhotoFrameMany component but with the font dard. Maybe using data-* attributes as a method. Do not know yet. 
 https://www.w3schools.com/tags/att_data-.asp
 
+
+## Hosting
+# Making it work in gh-pages:
+
+Two main problems: 
+0) Customization to work with gh-pages
+1) Images rendering
+2) Client site routing
+
+For 0), This is resolved using the process laid out in the repo: https://github.com/gitname/react-gh-pages 
+
+For 1) Initially, all images failed to render - reason being that the deployment build and development have different file folder structure. to accommodate gh-pages, create-react-app documentation has reasonably detailed instruction on various aspects https://create-react-app.dev/docs/deployment/#github-pages 
+
+Mainly below: 
+- Use import images instead of /assets/images/...
+- When there are many files, to do dynamic imports using js would be too complicated, instead, use create-react-app's PUBLIC_URL enviromental var in front of the file path, for example process.env.PUBLIC_URL+image.image in GalleryPhotoFrame.js
+- For svg files, using the method mentioned in create-react-app did not work. Instead, converted svg files to png files, then usine one of the above two ways. Worked.
+
+For 2), used the template provided in https://github.com/rafgraph/spa-github-pages/tree/gh-pages. Works perfectly upon the first try. It also fixed a problem that opening page did not show (probably due to adding baserouter='/seourmint-gp2' in <BrowserRouter> in App.js file).
+
