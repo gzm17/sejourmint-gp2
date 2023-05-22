@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sejourmint-gp2/static/css/main.f9b960bc.css",
-    "main.js": "/sejourmint-gp2/static/js/main.49d1065e.js",
+    "main.css": "/sejourmint-gp2/static/css/main.63785ec0.css",
+    "main.js": "/sejourmint-gp2/static/js/main.ab306450.js",
     "static/js/787.9d00e0ec.chunk.js": "/sejourmint-gp2/static/js/787.9d00e0ec.chunk.js",
     "static/media/activities-2.jpg": "/sejourmint-gp2/static/media/activities-2.aaff920a9820f9b9c970.jpg",
     "static/media/f3-choukokuji.jpg": "/sejourmint-gp2/static/media/f3-choukokuji.372f2859f4859dd9265c.jpg",
@@ -21,12 +21,12 @@
     "static/media/icon-winter.png": "/sejourmint-gp2/static/media/icon-winter.0260ed793ab73844bb96.png",
     "static/media/icon-summer.png": "/sejourmint-gp2/static/media/icon-summer.745fb2db4e7753914504.png",
     "index.html": "/sejourmint-gp2/index.html",
-    "main.f9b960bc.css.map": "/sejourmint-gp2/static/css/main.f9b960bc.css.map",
-    "main.49d1065e.js.map": "/sejourmint-gp2/static/js/main.49d1065e.js.map",
+    "main.63785ec0.css.map": "/sejourmint-gp2/static/css/main.63785ec0.css.map",
+    "main.ab306450.js.map": "/sejourmint-gp2/static/js/main.ab306450.js.map",
     "787.9d00e0ec.chunk.js.map": "/sejourmint-gp2/static/js/787.9d00e0ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9b960bc.css",
-    "static/js/main.49d1065e.js"
+    "static/css/main.63785ec0.css",
+    "static/js/main.ab306450.js"
   ]
 }
