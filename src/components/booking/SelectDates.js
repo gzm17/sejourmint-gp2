@@ -164,7 +164,7 @@ function SelectDates(props) {
         departDate = date[1];
         // console.log('date length = ', date.length, date)
     } 
-    // console.log('departDATE = ', departDate, typeof departDate);
+    console.log('ENTER DATEAS booking, arrivalDate, departDate, numGuests', props.booking, arrivalDate, departDate, numGuests);
 
     // else {
     //     if (props.booking.currentStep === 1) {

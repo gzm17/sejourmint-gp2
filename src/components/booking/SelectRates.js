@@ -150,7 +150,7 @@ function SelectRates(props) {
     return (
         <div className='viewPortSelectRates' >
             <h2 className='selectRatesTitle'>{title}</h2> 
-            <BookingInfo booking={props.booking} />
+            <BookingInfo booking={props.booking} language={props.language}/>
             <div className='selectedRoomType'>
                 <SelectedRoomType language={props.language} type={props.booking.type} />
             </div>

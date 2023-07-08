@@ -37,11 +37,13 @@
     margin: 5px;
 }
 .bookingInfoEditButton{
-    margin: 15px;
     width: 14%;
-    height: 25px;
+    margin: auto 15px auto auto;
+    height: 30px;
+    text-align: center;
+    color: black;
     border-radius: 5px;
-    background-color: rgb(179, 167, 167);;
+    background-color: rgb(200, 195, 195);;
 }
 /* For rendering small screen */
 @media only screen and (max-width: 768px) {

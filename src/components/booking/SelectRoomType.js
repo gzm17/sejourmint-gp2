@@ -56,21 +56,27 @@ useEffect(() => {
     props.getAvailableRooms(date1.toString(), date2.toString());
   }, []);
 
+  // Below block maps DB room type name with frontend room tyoe for presentation
 const tmp1 = props.availableRooms.filter(room => Number(room.rooms_used) > 0);
 const availableRooms = tmp1.map(room => {
-    if(room.room_type === 'Family 1') {return 'family1'}
-    else if(room.room_type === 'Family 2') {return 'family2'}
-    else if(room.room_type === 'Standard 1') {return 'standard1'}
-    else if(room.room_type === 'Standard 2') {return 'standard2'}
+    if(room.room_type === 'Twin Rooms') {return 'twin'}
+    else if(room.room_type === 'Triple Rooms') {return 'triple'}
+    else if(room.room_type === 'Japanese Style Large Room') {return 'japanlarge'}
+    else if(room.room_type === 'Japanese Style Standard Room') {return 'japanstd'}
+    else if(room.room_type === 'Mixed Japanese and Western Style Suite') {return 'suite'}
+    else if(room.room_type === 'Maisonette Room') {return 'maisonette'}
     else {return 'group'}
 });
 
+  // Below block maps DB room type name with frontend room tyoe for presentation
 const tmp2 = props.availableRooms.filter(room => Number(room.rooms_used) === 0);
 const unAvailableRooms = tmp2.map(room => {
-    if(room.room_type === 'Family 1') {return 'family1'}
-    else if(room.room_type === 'Family 2') {return 'family2'}
-    else if(room.room_type === 'Standard 1') {return 'standard1'}
-    else if(room.room_type === 'Standard 2') {return 'standard2'}
+    if(room.room_type === 'Twin Rooms') {return 'twin'}
+    else if(room.room_type === 'Triple Rooms') {return 'triple'}
+    else if(room.room_type === 'Japanese Style Large Room') {return 'japanlarge'}
+    else if(room.room_type === 'Japanese Style Standard Room') {return 'japanstd'}
+    else if(room.room_type === 'Mixed Japanese and Western Style Suite') {return 'suite'}
+    else if(room.room_type === 'Maisonette Room') {return 'maisonette'}
     else {return 'group'}
 });
 // console.log('AVAIL ROOMS & UNAVAIL ROOMS ', availableRooms, unAvailableRooms, tmp2, props.availableRooms);
@@ -80,7 +86,7 @@ const unAvailableRooms = tmp2.map(room => {
     return (
         <div className='viewPortSelectRoomType' >
             <h2 className='selectRoomTypeTitle'>{title}</h2> 
-            <BookingInfo booking={props.booking} />
+            <BookingInfo booking={props.booking} language={props.language}/>
             <div className='availableTypesFrame'>
                 <RoomTypesAvailable language={props.language} booking={props.booking} updateBooking={(b)=>props.updateBooking(b)} steps={props.steps} updateSteps={(s)=>props.updateSteps(s)} availableRooms={availableRooms}/>
             </div>

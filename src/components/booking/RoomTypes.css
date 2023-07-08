@@ -30,12 +30,13 @@
     /* margin-left: 25px; */
     align-items: flex-end;
 }
-.roomTPriceProceed, .roomTPriceWords {
-    width: 50%;
+.roomTPriceWords {
+    width: 70%;
     margin-left: 25px;
     text-align:left;
 }
 .roomTPriceProceed {
+    width: 30%;
     margin-right: 25px;
     margin-bottom: 20px;
     text-align: right;

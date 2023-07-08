@@ -5,48 +5,76 @@ export const roomType = [
     {
     id: 0,
     category: 'rooms',
-    name: 'Standard Room',
-    nameJ: '標準ルーム',
+    name: 'Twin/Tripe Rooms',
+    nameJ: 'ツイン・トリプル ルーム',
     caption: 'The standard rooms can sleep up to three guests. Both Western style and Japanese style (tatami) rooms are available.',
-    captionJ: '客室によって、収容人数が２−３人です。洋室と和室があります。',
-    captionCh1: '标准客房可供最多三位客人入住。酒店提供西式和日式（榻榻米）客房供选择。',
-    captionCh2: '標準客房可供最多三位客人入住。酒店提供西式和日式（榻榻米）客房以供選擇。',
+    captionJ: '客室によって、収容人数が２−３人です。洋室です。',
+    captionCh1: '标准客房可供最多三位客人入住。酒店提供西式客房供选择。',
+    captionCh2: '標準客房可供最多三位客人入住。酒店提供西式客房以供選擇。',
     images: [ 
         {
             id: 0,
-            image: '/assets/images/rooms/standard/rooms-std-0.jpg'
+            image: '/assets/images/rooms/twin/twin0.jpg'
         },
         {
             id: 1,
-            image: '/assets/images/rooms/standard/rooms-std-1.jpg'
+            image: '/assets/images/rooms/twin/twin1.jpg'
         },
         {
             id: 2,
-            image: '/assets/images/rooms/standard/rooms-std-2.jpg'
+            image: '/assets/images/rooms/triple/triple1.jpg'
+        },
+        {
+            id: 3,
+            image: '/assets/images/rooms/triple/triple2.jpg'
         }
     ]
     },
     {
         id: 1,
         category: 'rooms',
-        name: 'Family Room',
-        nameJ: 'ファミリルーム',
-        caption: 'The family rooms can accommodate from five to seven guests. Two suite rooms have both Western style beds and Japanese style tatami.',
-        captionJ: '客室によって、5ー7人が入れます。洋室と和室のスウィートルームが二つがあります。',
-        captionCh1: '家庭房可容纳五至七位客人入住。此外，酒店還提供两间套房，既配有西式床，也配有日式榻榻米。',
-        captionCh2: '家庭房可容納五至七位客人入住。此外，酒店還提供兩間套房，既配有西式床，也配有日式榻榻米。',
+        name: 'Suite Rooms',
+        nameJ: '和洋室・スイートルーム',
+        caption: 'The suite rooms can accommodate from five to seven guests. The suite rooms have both Western style beds and Japanese style tatami.',
+        captionJ: '客室によって、5ー7人が入れます。洋室と和室のスイートルームが二つがあります。',
+        captionCh1: '日式和西式套房配有连在一起的西式和日式房间。套房可容纳五至七位客人入住。',
+        captionCh2: '日式和西式套房配有連在一起的日式和西式房間。套房可容納五至七位客人入住。',
         images: [ 
             {
                 id: 0,
-                image: '/assets/images/rooms/suites/rooms-suite-0.jpg'
+                image: '/assets/images/rooms/suites/suite1.jpg'
             },
             {
                 id: 1,
-                image: '/assets/images/rooms/suites/rooms-suite-1.jpg'
+                image: '/assets/images/rooms/suites/suite2.jpg'
             },
             {
                 id: 2,
-                image: '/assets/images/rooms/suites/rooms-suite-2.jpg'
+                image: '/assets/images/rooms/suites/suite3.jpg'
+            }
+        ]
+    },
+    {
+        id: 2,
+        category: 'rooms',
+        name: 'Japanese Style Rooms',
+        nameJ: '和室',
+        caption: ' Depending on the room, the Japanese style rooms can accommodate 3 to 5 guests.',
+        captionJ: '客室によって、3ー5人が入れます。',
+        captionCh1: '日式房可容纳三至五位客人入住。',
+        captionCh2: '日式房可容納三至五位客人入住。',
+        images: [ 
+            {
+                id: 0,
+                image: '/assets/images/rooms/japanlarge/jpLg1.jpg'
+            },
+            {
+                id: 1,
+                image: '/assets/images/rooms/japanlarge/jpLg2.jpg'
+            },
+            {
+                id: 2,
+                image: '/assets/images/rooms/japanstd/jpStd1.jpg'
             }
         ]
     },
@@ -62,11 +90,11 @@ export const roomType = [
         images: [ 
             {
                 id: 0,
-                image: '/assets/images/rooms/group/rooms-group-0.jpg'
+                image: '/assets/images/rooms/group/group1.jpg'
             },
             {
                 id: 1,
-                image: '/assets/images/rooms/group/rooms-group-1.jpg'
+                image: '/assets/images/rooms/group/group2.jpg'
             }
         ]
     },
@@ -82,15 +110,11 @@ export const roomType = [
         images: [ 
             {
                 id: 0,
-                image: '/assets/images/rooms/other/rooms-other-0.jpg'
+                image: '/assets/images/rooms/other/jpBath1.jpg'
             },
             {
                 id: 1,
-                image: '/assets/images/rooms/other/rooms-other-1.jpg'
-            },
-            {
-                id: 2,
-                image: '/assets/images/rooms/other/rooms-other-2.jpg'
+                image: '/assets/images/rooms/other/unitBath1.jpg'
             }
         ]
     }

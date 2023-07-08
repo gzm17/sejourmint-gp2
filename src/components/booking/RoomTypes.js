@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Outlet, Link } from "react-router-dom";
 import { IoArrowForward, IoAdd, IoRemove, IoAddCircleOutline, IoBarChartOutline, IoCheckmark, IoChevronDownOutline, IoChevronUpOutline, IoPersonOutline, IoCalendarClearOutline} from "react-icons/io5";
 import { PropTypes } from "prop-types";
@@ -56,8 +56,34 @@ export function RoomTypesAvailable(props) {
         details = '詳細';
     } else {};
 
-    const price = 16000; // later replace by query result    
+    var price = 16000; // later replace by query result    
     // console.log('grand p values - ', props.booking.adults);
+
+    // START: The following fetches the DB room_rates table in order to get the basic rates
+    // Holder of rates table - do not really need a state but the code works
+    const [ratesTable, setRatesTable] = useState({});
+    useEffect(() => {
+
+        async function getRatesTable() {
+            try {
+                const response = await fetch('http://localhost:3001/getRatesTable', {
+                    method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({IsFetchingRates: true}),
+                });
+                const jsonData = await response.json();
+                console.log('Rates Table = ', jsonData);
+                setRatesTable(jsonData);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+        getRatesTable();
+        // console.log('FETCHED DATA = ', roomRates);
+    }, [])
+
+    // END fetching room_rates table
+
 
     function handleUpdate(roomT) {
         let booking = props.booking;
@@ -77,11 +103,20 @@ export function RoomTypesAvailable(props) {
     }
 
     const roomTypesAvailable = props.availableRooms;
-    // const roomTypesAvailable = ['standard1',  'standard2', 'family1', 'family2'];
 
     // Filter out the room type that is still available for booking 
     const roomTypesAvailablePack = roomTypesAvailable.map((type, index) => {
+        // link to the data file for the room type
         const roomT = roomType2.filter((rt) => rt.type === type)[0];
+        // find dbId for the room type, and then populate price for the lowest rate
+        for (var i = 0; i < ratesTable.length; i++) {
+            // console.log('ENTER LOOP i ratesT type = ', i, ratesTable[i], roomT);
+            if (roomT.dbId === ratesTable[i].room_type_id ) {
+                price = Number(ratesTable[i].rate);
+                // console.log('Found Rate = ', price);
+                break;
+            }
+        }
 
         return (
             <div className='typeBox' key={index}>
@@ -95,7 +130,7 @@ export function RoomTypesAvailable(props) {
                 <div className='roomTPrice'>
                     <div className='roomTPriceWords'>
                         <p style={{fontSize: 15, margin: 0}}>From</p>
-                        <p style={{fontSize: 20, margin: 0}}>{'JPY ' + price.toLocaleString()}</p>
+                        <p style={{fontSize: 20, margin: 0}}>{'JPY ' + price.toLocaleString() + ' per Day'}</p>
                         <p style={{fontSize: 15, margin: 0}}>{taxExcluded}</p>
                     </div>
                     <div className='roomTPriceProceed'>

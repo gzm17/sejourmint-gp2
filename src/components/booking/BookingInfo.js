@@ -8,7 +8,7 @@ import './BookingHeader.css';
 
 function BookingInfo(props) {
 
-    var title, dates, roomTypes, rates, summary, details;
+    var title, dates, roomTypes, rates, summary, details, edit;
     if (props.language === 'en') {
         title = 'Select Room Type';
         dates = 'Dates';
@@ -16,6 +16,7 @@ function BookingInfo(props) {
         rates = 'Rates';
         summary = 'Summary';
         details = 'Details';
+        edit = 'Edit';
     } else if (props.language === 'jp') {
         title = '部屋タイプを選択する';
         dates = '日付';
@@ -23,6 +24,7 @@ function BookingInfo(props) {
         rates = '料金';
         summary = 'サマリー';
         details = '詳細';
+        edit = '編集';
     } else if (props.language === 'ch1') {
         title = '选择客房种类';
         dates = '日期';
@@ -30,6 +32,7 @@ function BookingInfo(props) {
         rates = '房价';
         summary = '总额';
         details = '详细';
+        edit = '更新';
     } else if (props.language === 'ch2') {
         title = '選擇客房種類';
         dates = '日期';
@@ -37,10 +40,11 @@ function BookingInfo(props) {
         rates = '房價';
         summary = '總額';
         details = '詳細';
+        edit = '更新';
     } else {};
 
     const numOfGuests = props.booking.adults + props.booking.kids;
-    const numOfDays = Math.round((props.booking.checkout.getTime() - props.booking.checkin.getTime())/(24*60*60*1000));
+    const numOfDays = Math.round((props.booking.checkout.getTime() - props.booking.checkin.getTime())/(24*60*60*1000)) - 1;
 
 // onClick={()=>closeCalendar()} 
     return (
@@ -53,9 +57,10 @@ function BookingInfo(props) {
                 <div className='selectedGuestNumsTitle'>{'Selected Guests: ' + numOfGuests }</div>
                 <div className='selectedGuestNumsInfo'>{'Adults - ' + props.booking.adults + '  /  Children - ' + props.booking.kids}</div>
             </div>
-            <div className='bookingInfoEditButton'>
+            <Link to='/booking/dates' className='bookingInfoEditButton'>{edit}</Link>
+            {/* <div className='bookingInfoEditButton'>
                 Edit
-            </div>
+            </div> */}
         </div>
     )
 }
