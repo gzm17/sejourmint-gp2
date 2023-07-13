@@ -1,0 +1,66 @@
+.accessContainer {
+    width: 100%;
+    height: auto;
+    /* margin: auto; */
+}
+.accessSection {
+    width: 85%;
+    height: auto;
+    margin: 50px auto 0 auto;
+}
+.sectionImage0 {
+    width: 60%;
+    height: auto;
+    margin: 0 auto 20px auto;
+}
+.accessSectionImageAndText {
+    display:flex;
+    width: 85%;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 25px auto 25px auto;
+    flex-wrap: wrap;
+}
+p {
+    width: 100%;
+    /* margin: 25px auto 25px auto; */
+    padding: 10px 20px 10px 30px;
+}
+.accessSectionImage {
+    width: 33%;
+    margin-left: 0;
+    margin-top: 20px;
+}
+.accessSectionText {
+    width: 66%;
+    margin-left: 0;
+}
+.accessSectionTitle {
+    width: 100%;
+    margin-left: 0;
+    text-align: left!important;
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+}
+.accessSectionText0 {
+    width: 100%;
+}
+
+/* The following adjusts the amenity group presentation for small screen */
+@media only screen and (max-width: 768px) {  
+    .accessSectionImageAndText {
+        width: 100%;
+        justify-content: center;
+    }
+    .accessSectionImage {
+        width: 80%;
+        margin-top: 20px;
+    }
+    .accessSectionText {
+        width: 100%;
+    }
+    .sectionImage0 {
+        width: 100%;
+    }
+}

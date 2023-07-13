@@ -30,7 +30,7 @@ const Header = (props) => {
 
     // set language icon and menu items based on the language state from props.language
     var langIcon = '', langWord = '', featureHeading = '', roomsHeading = '', foodHeading = '', actHeading = '', 
-        galleryHeading = '', contactHeading = '', bookHeading = '', galleryHeading = '';
+        galleryHeading = '', contactHeading = '', bookHeading = '', galleryHeading = '', accessHeading = '';
     // console.log('language seen in header = ', props.language)
     if (props.language === 'en') {
         langWord = 'English';
@@ -38,6 +38,7 @@ const Header = (props) => {
         featureHeading = 'Convenience';
         roomsHeading = 'Rooms and Amenities';
         foodHeading = 'Food and Drink';
+        accessHeading = 'Access to the Hotel';
         actHeading = 'Activities';
         galleryHeading = 'Gallery';
         contactHeading = 'Contact Us';
@@ -49,6 +50,7 @@ const Header = (props) => {
         roomsHeading = '部屋とアメニティー';
         foodHeading = '食べ物と飲み物';
         actHeading = 'アクテビティ';
+        accessHeading = 'ホテルへのアクセス';
         galleryHeading = 'ギャラリー';
         contactHeading = '問い合わせ';
         bookHeading = '予約';
@@ -59,6 +61,7 @@ const Header = (props) => {
         roomsHeading = '客房及附带服务';
         foodHeading = '食物和饮料';
         actHeading = '标准服务';
+        accessHeading = '来酒店的交通方式';
         galleryHeading = '画廊';
         contactHeading = '询问';
         bookHeading = '订房';
@@ -69,6 +72,7 @@ const Header = (props) => {
         roomsHeading = '客房及附帶服務';
         foodHeading = '食物和飲料';
         actHeading = '標準服務';
+        accessHeading = '來酒店的交通方式';
         galleryHeading = '畫廊';
         contactHeading = '詢問';
         bookHeading = '訂房';
@@ -83,10 +87,11 @@ const Header = (props) => {
                     <div className='bar2'></div>
                     <div className='bar3'></div>
                     <div className="menuDropdown">  {/* From here the dropdown menu content */}
-                        <Link1 to="/#features">{featureHeading}</Link1>          {/* Link1 allows jumping to anywhere marked by id */}
-                        <Link1 to="/#rooms">{roomsHeading}</Link1>
+                        {/* <Link1 to="/#features">{featureHeading}</Link1>          Link1 allows jumping to anywhere marked by id */}
+                        <Link1 to="rooms">{roomsHeading}</Link1>
                         <Link1 to="/#foods">{foodHeading}</Link1>
                         <Link1 to="/#activities">{actHeading}</Link1>
+                        <Link1 to='access'>{accessHeading}</Link1>
                         <Link1 to='gallery'>{galleryHeading}</Link1>
                         <Link1 to="/#contactUs">{contactHeading}</Link1>
 
@@ -101,7 +106,8 @@ const Header = (props) => {
                 <Outlet />
             </div>
             <div className='col-6 col-sm-top2 col-md-top2 headerCenter'>  {/* middle 50% container for hotel name */}
-                <h1 id='hotelName'>Hotel Sejour Mint</h1>
+                {/* <h1 id='hotelName'>Hotel Sejour Mint</h1> */}
+                <Link to='/' id='hotelName' className='hotelNameInHeader'>Hotel Sejour Mint</Link>
             </div>
             <div className='col-3 headerRight'>             {/* right 25% container for booking button for big screen */}
                 <div id='langWord' className='langDropdownBox'>{langWord}

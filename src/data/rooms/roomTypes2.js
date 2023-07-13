@@ -9,8 +9,10 @@ export const roomType2 = [
     dbId: 4,
     name: 'Twin Rooms',
     nameJ: 'ツイン',
-    caption: 'The twin rooms can accommodate up to two guests',
-    captionJ: '収容人数が２人です。',
+    caption: 'Each of the twin rooms has two beds.',
+    captionJ: '各ツインルームにはベッドが3台ずつあります。',
+    captionCh1: '每个双人间配有两张床。',
+    captionCh2: '每個雙人間均配備有兩張床。',
     numGuests: 2,
     images: [ 
         {
@@ -46,8 +48,10 @@ export const roomType2 = [
         dbId: 1,
         name: 'Triple Rooms',
         nameJ: 'トリプル',
-        caption: 'The triple rooms are Western style rooms and can accommodate up to three guests.',
-        captionJ: '収容人数が３人です。洋室です。',
+        caption: 'Each of the triple rooms has three beds. ',
+        captionJ: '各トリプルルームにはベッドが3台ずつあります。',
+        captionCh1: '每个三人间配有三张床。',
+        captionCh2: '每個三人間均配備有三張床。',
         numGuests: 3,
         images: [ 
             {
@@ -76,7 +80,9 @@ export const roomType2 = [
         name: 'Japanese Style Large Room',
         nameJ: '和室スーぺリア',
         caption: 'This large Japanese style room can accommodate up to five guests. ',
-        captionJ: '和室スーぺリアは、収容人数が5人です。',
+        captionJ: '和室スーぺリアは最大で5人まで宿泊可能です。',
+        captionCh1: '这间宽敞的日式房间最多可容纳5位客人。',
+        captionCh2: '這間寬敞的日式房間最多可容納五位客人。',
         numGuests: 5,
         images: [ 
             {
@@ -96,8 +102,10 @@ export const roomType2 = [
         dbId: 5,
         name: 'Mixed Japanese and Western Style Suite',
         nameJ: '和洋室',
-        caption: 'The mixed Japanese and Western style rooms can accommodate seven guests. They are suite rooms with both western style beds and Japanese style (tatami).',
-        captionJ: '収容人数が7人です。洋室と和室が繋がっているスウィト部屋です。',
+        caption: 'The mixed Japanese and Western style suite rooms can accommodate up to seven guests. The Western-style room is furnished with three beds, while the Japanese-style room can accommodate four futon beds.',
+        captionJ: '和洋折衷のスイートルームは最大で7人まで宿泊できます。洋室にはベッドが3台あり、和室には4つの布団が置かれています。',
+        captionCh1: '混合日式和西式风格的套房可容纳最多七位客人。西式房间配有三张床，而日式房间可容纳四张榻榻米床。',
+        captionCh2: '混合日式和西式風格的套房可容納最多七位客人。西式房間配有三張床，而日式房間可容納四張榻榻米床。',
         numGuests: 7,
         images: [ 
             {
@@ -121,8 +129,10 @@ export const roomType2 = [
         dbId: 3,
         name: 'Group Room',
         nameJ: 'グループ室',
-        caption: 'This large Japanese style room can accommodate up to 11 guests. It is best for  groups.',
-        captionJ: 'この大きな畳室は、11名までの顧客が入られます。団体旅行に最適。',
+        caption: 'This large Japanese style room can accommodate up to 10 guests. It is best for  groups.',
+        captionJ: 'この大きな畳室は、10名までの顧客が入られます。団体旅行に最適。',
+        captionCh1: '这间宽敞的日式房间最多可容纳10位客人。非常适合团体入住。',
+        captionCh2: '這間寬敞的日式房間最多可容納10位客人。非常適合團體入住。',
         numGuests: 10,
         images: [ 
             {
@@ -144,6 +154,8 @@ export const roomType2 = [
         nameJ: 'メソネット室',
         caption: 'The maisonette room has two beds and three fotons and can accommodate up to 5 guests.',
         captionJ: 'メソネット室は、５名までの顧客が入られます。',
+        captionCh1: '复式房间有两张床和三张佛顿床，最多可容纳5位客人。',
+        captionCh2: '複式房間內配備兩張床和三張佛頓床，最多可容納5位客人。',
         numGuests: 5,
         images: [ 
             {
@@ -163,8 +175,10 @@ export const roomType2 = [
         dbId: 6,
         name: 'Japanese Style Standard Room',
         nameJ: 'グループ室',
-        caption: 'This Japanese style room can accommodate up to 3 guests. ',
-        captionJ: '和室STDha, ３名までの顧客が入られます。',
+        caption: 'This Japanese style room can accommodate up to 2 guests. ',
+        captionJ: '和室STDは, 2名までの顧客が入られます。',
+        captionCh1: '日式标准客房可供二位客人入住。',
+        captionCh2: '日式標準客房可供二位客人入住。',
         numGuests: 3,
         images: [ 
             {

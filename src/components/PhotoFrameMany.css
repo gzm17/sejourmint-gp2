@@ -6,6 +6,8 @@
 .photoFrameMany {
     width: 100%;
     height: auto;
+    margin-top: 0;
+    padding: 30px;
 }
 
 .imageFrameMany {

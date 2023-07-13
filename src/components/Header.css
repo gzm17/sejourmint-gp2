@@ -37,9 +37,17 @@ headerRight contains the <a> for booking
     /* width: 50%; */
     height: 100%;
     /* float: left; */
-    text-align: center;
+    /* margin-top: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color:  rgb(242, 180, 34);
     z-index: 2;
+}
+.hotelNameInHeader {
+    font-size:xx-large;
+    font-weight: bolder;
+    color:  rgb(242, 180, 34);
 }
 
 h2 {

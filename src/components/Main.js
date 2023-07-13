@@ -1,17 +1,15 @@
 import React from 'react';
 // The following imports the components for presentation
-import Header from './Header';
-import Footer from './Footer';
 import PhotoFrame from './PhotoFrame';
 import PhotoFrameMany from './PhotoFrameMany';
-import ContactUs from './ContactUs';
-import Gallery from './gallery/GalleryHeader';
+import PhotoAutoplay from './PhotoAutoplay';
 import SectionTitle from './SectionTitle';
 import SectionText from './SectionText';
 
 // the following imports contents to populate the textual components
 import './Main.css';
 import {mainFeatureText} from '../data/mainFeature/mainFeatureText.js';
+import {mainFeaturePhotoRoll} from '../data/mainFeature/mainFeaturePhotoRoll.js';
 import {welcomeText} from '../data/mainFeature/mainFWelcomeText.js';
 import {convenienceText} from '../data/features/convenienceText.js';
 import {roomsMainText} from '../data/rooms/roomsMainText';
@@ -35,6 +33,14 @@ import feature1 from '../assets/images/features/f1-goryu-night.jpg';
 import feature2 from '../assets/images/features/f2-ski-ita.jpg';
 import feature3 from '../assets/images/features/f3-choukokuji.jpg';
 
+import rooms1 from '../assets/images/rooms/rooms-twin1.jpg';
+import rooms2 from '../assets/images/rooms/rooms-triple4.jpg';
+import rooms3 from '../assets/images/rooms/rooms-suite1.jpg';
+import rooms4 from '../assets/images/rooms/rooms-jpLg1.jpg';
+import rooms5 from '../assets/images/rooms/rooms-maisonette2.jpg';
+import rooms6 from '../assets/images/rooms/rooms-jpStd1.jpg';
+import rooms7 from '../assets/images/rooms/rooms-jpGroup3.jpg';
+
 import foods1 from '../assets/images/foods/foods-dinner.jpg';
 import foods2 from '../assets/images/foods/foods-diningRm.jpg';
 import foods3 from '../assets/images/foods/foods-beer.jpg';
@@ -53,7 +59,7 @@ function Main(props) {
     // Prepare headings for bilingual 
     // set language icon and menu items based on the language state from props.language
     var featureHeading = '', roomsHeading = '', foodHeading = '', actHeading = '', 
-        galleryHeading = '', contactHeading = '', galleryHeading = '', welcomeHeading = '', welcome, convenience, foodndrinks, activities, voices;
+        galleryHeading = '', contactHeading = '', galleryHeading = '', welcomeHeading = '', welcome, convenience, rooms, foodndrinks, activities, voices;
     if (props.language === 'en') {
         welcomeHeading = 'Welcome to Hotel Sejour Mint';
         featureHeading = 'Convenience';
@@ -98,21 +104,25 @@ function Main(props) {
     if (props.language === 'en') {
         welcome = welcomeText.text;
         convenience = convenienceText.text;
+        rooms = roomsMainText[0].text;
         foodndrinks = foodsMainText.text;
         activities = activitiesMainText.text;
     } else if (props.language === 'jp') {
         welcome = welcomeText.textJ;
         convenience = convenienceText.textJ;
+        rooms = roomsMainText[0].textJ;
         foodndrinks = foodsMainText.textJ;
         activities = activitiesMainText.textJ;
     } else if (props.language === 'ch1') {
         welcome = welcomeText.textCh1;
         convenience = convenienceText.textCh1;
+        rooms = roomsMainText[0].textCh1;
         foodndrinks = foodsMainText.textCh1;
         activities = activitiesMainText.textCh1;
     } else if (props.language === 'ch2') {
         welcome = welcomeText.textCh2;
         convenience = convenienceText.textCh2;
+        rooms = roomsMainText[0].textCh2;
         foodndrinks = foodsMainText.textCh2;
         activities = activitiesMainText.textCh2;
     } else {};
@@ -180,8 +190,8 @@ function Main(props) {
 
             {/* The following div is for the main image - which later may become a set of images or video clip */}
             <div className='mainFeatureImg'>
-                <img src={topImage} className='featureImgFrame' alt='Hotel Sejour Mint Winter 05 - import ' />
-
+                {/* <img src={topImage} className='featureImgFrame' alt='Hotel Sejour Mint Winter 05 - import ' /> */}
+                <PhotoAutoplay images={mainFeaturePhotoRoll} />
                 {/* <img src='%PUBLIC_URL%/assets/images/mainFeature/mf-win-back.jpg' className='featureImgFrame' alt='Hotel Sejour Mint Winter 04' /> */}
             </div>
 
@@ -231,11 +241,27 @@ function Main(props) {
             {/* {featureImages} */}
 
             {/* This block is rendering of rooms section of the page */}
-            <SectionTitle ids='rooms' title={roomsHeading} />
+            {/* <SectionTitle ids='rooms' title={roomsHeading} />
             <div className='sectionMain'>
                 <SectionText text={roomsMainText} language={props.language} />
             </div>
-            <div className='sectionEnd sectionMain' >{roomsContent}</div>
+            <div className='sectionEnd sectionMain' >{roomsContent}</div> */} 
+
+            <SectionTitle ids='rooms' title={roomsHeading} />
+            <div className='roomGroup1'>
+                <img src={rooms1} className='roomGroupImage1' alt='Rooms 1' />
+                <div className='roomGroupText'> {rooms} </div>
+                <img src={rooms2} className='roomGroupImage2' alt='Rooms 2' />
+                <img src={rooms3} className='roomGroupImage3' alt='Rooms 3' />
+            </div>
+            <div className='roomGroup2'>
+                <img src={rooms4} className='roomGroupImage4' alt='Rooms 4' />
+                <img src={rooms5} className='roomGroupImage5' alt='Rooms 5' />
+                <img src={rooms6} className='roomGroupImage6' alt='Rooms 6' />
+                <img src={rooms7} className='roomGroupImage7' alt='Rooms 7' />
+            </div>
+            <div className='sectionEnd'>{}</div>
+
 
             {/* Food and Drinks section: This is the second version. Once we have determined the 
             food and drinks, esp after the bar is complete, this will be updated. For now this is

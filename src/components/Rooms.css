@@ -1,0 +1,71 @@
+.roomsContainer {
+    width: 100%;
+    height: auto;
+    margin-top: 200px;
+}
+.amenityGroup1, .amenityGroup2 {
+    display: flex;
+    width: 85%;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.amenityGroupText1, .amenityGroupText2, .amenityGroupImage1, .amenityGroupImage2, .amenityGroupImage3, .amenityGroupImage4 {
+    width: 32%;
+    height: auto;
+    padding: 5px;
+} 
+.amenityGroupText1, .amenityGroupText2 {
+    padding: 15px;
+}
+.amenityGroupImage1, .amenityGroupImage3 {
+    border-radius: 0 0 0 25px;
+}
+.amenityGroupImage2, .amenityGroupImage4 {
+    border-radius: 0 25px 0 0;
+}
+
+/* The following adjusts the amenity group presentation for small screen */
+@media only screen and (max-width: 768px) {  
+    .amenityGroup1, .amenityGroup2 {
+        justify-content: center;
+
+    }
+    .amenityGroupText1 {
+        width: 100%;
+        padding: 15px;
+        order: 1;
+    }
+    .amenityGroupImage1 {
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 25px;
+        order: 2;
+    }
+    .amenityGroupImage2 {
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 25px;
+        order: 3;
+    }
+    .amenityGroupText2 {
+        width: 100%;
+        padding: 15px;
+        order: 4;
+    }
+    .amenityGroupImage3 {
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 25px;
+        order: 5;
+    }
+    .amenityGroupImage4 {
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 25px;
+        order: 6;
+    }
+
+}

@@ -7,6 +7,8 @@ import Main from './components/Main';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ContactUs from './components/ContactUs';
+import Rooms from './components/Rooms';
+import Access from './components/access/Access';
 import GalleryHeader from './components/gallery/GalleryHeader';
 import GalleryPhotoFrame from './components/gallery/GalleryPhotoFrame';
 import BookingHeader from './components/booking/BookingHeader';
@@ -179,6 +181,9 @@ export default function App() {
                 <Route path='details' element={<CommitBooking language={language} bookedRooms={bookedRooms} refreshBookedRooms={(rms) => refreshBookedRoom(rms)} steps={steps} updateSteps={(s)=>updateSteps(s)} />} />
 
             </Route>
+
+            <Route path='rooms' element={<Rooms language={language}/>} />
+            <Route path='access' element={<Access language={language} /> } />
 
             <Route path='gallery' element={<GalleryHeader language={language} />} >
               {/* Embedded sub-routes under gallery */ }
