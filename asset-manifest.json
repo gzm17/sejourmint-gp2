@@ -1,13 +1,24 @@
 {
   "files": {
-    "main.css": "/sejourmint-gp2/static/css/main.63785ec0.css",
-    "main.js": "/sejourmint-gp2/static/js/main.ab306450.js",
+    "main.css": "/sejourmint-gp2/static/css/main.93399a13.css",
+    "main.js": "/sejourmint-gp2/static/js/main.5f81a6ed.js",
     "static/js/787.9d00e0ec.chunk.js": "/sejourmint-gp2/static/js/787.9d00e0ec.chunk.js",
+    "static/media/rooms-jpLg1.jpg": "/sejourmint-gp2/static/media/rooms-jpLg1.f027b29cd8577e771e84.jpg",
+    "static/media/rooms-suite1.jpg": "/sejourmint-gp2/static/media/rooms-suite1.1eed6556dab48ae40e0f.jpg",
+    "static/media/rooms-jpStd1.jpg": "/sejourmint-gp2/static/media/rooms-jpStd1.2cf428b1bd679c6c7c16.jpg",
+    "static/media/rooms-triple4.jpg": "/sejourmint-gp2/static/media/rooms-triple4.e2d949f4dfa49ab5cc31.jpg",
+    "static/media/rooms-maisonette2.jpg": "/sejourmint-gp2/static/media/rooms-maisonette2.b9747c0ed6e5e57c5e98.jpg",
+    "static/media/rooms-twin1.jpg": "/sejourmint-gp2/static/media/rooms-twin1.294adafdd502971e47b7.jpg",
+    "static/media/amenity-jpBath1.jpg": "/sejourmint-gp2/static/media/amenity-jpBath1.538c6dea39147c04dabf.jpg",
     "static/media/activities-2.jpg": "/sejourmint-gp2/static/media/activities-2.aaff920a9820f9b9c970.jpg",
     "static/media/f3-choukokuji.jpg": "/sejourmint-gp2/static/media/f3-choukokuji.372f2859f4859dd9265c.jpg",
+    "static/media/amenity-sharedToilet1.jpg": "/sejourmint-gp2/static/media/amenity-sharedToilet1.a3ae7a9d9aaaa64f1e97.jpg",
+    "static/media/rooms-jpGroup3.jpg": "/sejourmint-gp2/static/media/rooms-jpGroup3.ea291d3270fcd6b116a6.jpg",
+    "static/media/amenity-unitBath2.jpg": "/sejourmint-gp2/static/media/amenity-unitBath2.220ceb05599a4153f846.jpg",
     "static/media/foods-beer.jpg": "/sejourmint-gp2/static/media/foods-beer.6d2611bdf98e6a5307c8.jpg",
     "static/media/foods-diningRm.jpg": "/sejourmint-gp2/static/media/foods-diningRm.89d70ff6f73bb292bfb9.jpg",
     "static/media/activities-3.jpg": "/sejourmint-gp2/static/media/activities-3.e9019b991f90e0c99757.jpg",
+    "static/media/amenity-kettle1.jpg": "/sejourmint-gp2/static/media/amenity-kettle1.3a01cf16d5b81ca42547.jpg",
     "static/media/mf-welcome1.jpg": "/sejourmint-gp2/static/media/mf-welcome1.6d20ade834823faa79a8.jpg",
     "static/media/f1-goryu-night.jpg": "/sejourmint-gp2/static/media/f1-goryu-night.68832e73a7864cf35b4c.jpg",
     "static/media/activities-4.jpg": "/sejourmint-gp2/static/media/activities-4.fb5ad139d155eeaf896b.jpg",
@@ -21,12 +32,12 @@
     "static/media/icon-winter.png": "/sejourmint-gp2/static/media/icon-winter.0260ed793ab73844bb96.png",
     "static/media/icon-summer.png": "/sejourmint-gp2/static/media/icon-summer.745fb2db4e7753914504.png",
     "index.html": "/sejourmint-gp2/index.html",
-    "main.63785ec0.css.map": "/sejourmint-gp2/static/css/main.63785ec0.css.map",
-    "main.ab306450.js.map": "/sejourmint-gp2/static/js/main.ab306450.js.map",
+    "main.93399a13.css.map": "/sejourmint-gp2/static/css/main.93399a13.css.map",
+    "main.5f81a6ed.js.map": "/sejourmint-gp2/static/js/main.5f81a6ed.js.map",
     "787.9d00e0ec.chunk.js.map": "/sejourmint-gp2/static/js/787.9d00e0ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63785ec0.css",
-    "static/js/main.ab306450.js"
+    "static/css/main.93399a13.css",
+    "static/js/main.5f81a6ed.js"
   ]
 }
